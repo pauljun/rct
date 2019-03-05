@@ -1,0 +1,28 @@
+@import '../../vars.less';
+
+.s-link-tools {
+  .link-btn.default {
+    color: @icon-font-color;
+    &:hover {
+      color: @all-active-orange;
+    }
+  }
+  .link-btn.outlined {
+    border: 1px solid @c-fff;
+    background: @c-fff;
+    color: @primary-color;
+    &:hover {
+      border: 1px solid @primary-color;
+      background: @all-active-orange;
+      color: @c-fff;
+    }
+  }
+  .link-btn.filled {
+    border: 1px solid @primary-color;
+    background: @all-active-orange;
+    color: @c-fff;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../vars.less';
+.resource-management-view{
+	.place-management-tree-search{
+		border-bottom-color:@all-bdcolor;
+	}
+	.anticon{
+		color:@icon-font-color;
+	}
+	.ant-tree li {
+		.ant-tree-node-content-wrapper.ant-tree-node-selected {
+			background-color: @c-fff;
+		}
+		.tree-node-suffix{
+			&:hover .anticon,
+			.anticon.active {
+				color:@primary-color;
+			}
+		}
+	}
+}

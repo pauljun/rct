@@ -1,0 +1,74 @@
+@import '../../vars.less';
+
+.key-perosnnel-detail {
+  .details_text_handled{
+    border-color: #ccc;
+    background: #fff;
+  }
+  .detail_header_button {
+    .header_btn {
+      color: #fff;
+      &:first-child {
+        background-image: linear-gradient(-180deg, #25DC9B 0%, #0FC484 95%);
+        &:active,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(-180deg, #0FC484 0%, #0AAC72 100%);
+        }
+      }
+      &:last-child {
+        background-image: linear-gradient(-180deg, #FFBB22 0%, #FFAA00 100%);
+        &:active,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(-180deg, #FFAA00 0%, #FF8800 100%);
+        }
+      }
+    }
+  }
+  .key-point-header {
+    .detail_detailed_left{
+      .detailed_Cloth{
+        border-color: #ccc;
+        background: #fff;
+        .cloth_p{
+          color: #333333;
+        }
+      }
+    }
+    .detail_detailed_right {
+      border-color:#ccc;
+      background: #fff;
+      .detailed_right_header {
+        border-bottom-color: #ccc;
+        .header_name {
+          color: @primary-color;
+          &.header_name_illegal{
+            color: @primary-color;
+          }
+        }
+        .header_progress{
+          .progress_span{
+            color: #666666;
+          }
+          .ant-progress{
+            .ant-progress-bg{
+              background: @primary-color;
+            }
+            .ant-progress-text{
+              color: @primary-color;
+            }
+          }
+        }
+      }
+      .detailed_right_center{
+        .right_center_p{
+          color: @c-333;
+          .right_center_span{
+            color: @c-666;
+          }
+        }
+      }
+    }
+  }
+}

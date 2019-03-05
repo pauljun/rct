@@ -1,0 +1,21 @@
+@import '../../../assets/style/vars.less';
+
+.pagination-btn-container {
+  text-align: center;
+  .ant-btn:not(:disabled) {
+    height: 32px;
+    border: 1px solid @c-main;
+    color: @c-main;
+    &:hover {
+      color: @c-fff;
+      background: @all-active-orange;
+    }
+  }
+  .anticon {
+    font-size: @fs-16;
+  }
+  .page-btn {
+    width: 36px;
+    padding: 0;
+  }
+}

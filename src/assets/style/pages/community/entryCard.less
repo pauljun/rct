@@ -1,0 +1,52 @@
+@import '../../vars.less';
+
+.community_entry_card{
+  border-bottom-color: #d8dce3;
+  &.community_entry_card_active{
+    border-top-color: @primary-color;
+    border-bottom:1px solid @primary-color;
+    background: #fff;
+  }
+  .card_header {
+    .card_img_box {
+      border-color: #dedede;
+    }
+    .card_title_box {
+      .card_title {
+        color: @primary-color;
+      }
+      .card_adress {
+        color: #333333;
+      }
+    }
+  }
+  .card_content {
+    .anticon {
+      color: #8899BB;
+    }
+    .left_title {
+      color: #333333;
+    }
+    .content_people_right {
+      color: @primary-color;
+      .right_span {
+        color: #666666;
+      }
+    }
+  }
+  .card_footer {
+    .anticon {
+      color: #8899BB; 
+    }
+    .ant-btn {
+      
+      &:hover,&:focus{
+        color:#fff;
+        background: @all-active-orange;
+        .anticon{
+          color: #fff;  
+        }
+      }
+    }
+  }
+}

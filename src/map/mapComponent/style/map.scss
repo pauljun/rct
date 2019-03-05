@@ -1,0 +1,287 @@
+.ibs-amap-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .amap-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  object {
+    visibility: hidden !important;
+  }
+}
+
+.amap-toolbar {
+  right: 30px !important;
+  bottom: 120px !important;
+}
+
+/*摄像头名称显示样式*/
+
+body {
+  .device-point-view .amap-marker-label{
+    top: -68px !important;
+  }
+  .amap-marker-label {
+    top: -56px !important;
+    background: #00a1f2;
+    color: #fff;
+    border: 0;
+    transform: translate(-50%, 0);
+    margin-left: 16px;
+    padding: 3px 10px;
+    border-radius: 2px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-width: 4px;
+      margin-left: -5px;
+      border-style: solid;
+      border-color: #00a1f2 transparent transparent transparent;
+    }
+  }
+}
+
+body .amap-marker-content {
+  white-space: normal !important;
+}
+/**
+ * 地图图标
+*/
+
+body .map-marker-index {
+  width: 24px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/resource/image/person-map-icon.svg') no-repeat;
+  background-size: 24px 32px;
+  color: #fff;
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+// 默认点位样式
+body .map-icon-content {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  &.isCenter{
+    border-radius:0;
+    height: 42px;
+    width: 32px;
+    .bd{
+      box-shadow: none;
+      background: none;
+      height: 42px;
+      width: 32px;
+      left: 0;
+      top: 0;
+      border: 0;
+      border-radius:0;
+      background-size: 30px;
+      text-align: center;
+      img{
+      margin-top: 8px;
+      }  
+      &.onLine{
+      background: url('/resource/image/Place_icon_OnLine_Normal.svg') no-repeat;
+      &:hover{
+        background: url('/resource/image/Place_icon_OnLine_Hover.svg') no-repeat;
+      }
+      }
+      &.outLine {
+        background: url('/resource/image/Place_icon_OutLine_Normal.svg') no-repeat;
+        &:hover {
+          background: url('/resource/image/Place_icon_OutLine_Hover.svg') no-repeat;
+        }
+      }
+    }
+  }
+  .bd {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 1;
+  }
+  .circle {
+    width: 0;
+    height: 0;
+    border-radius: 15px;
+    border-width: 15px;
+    border-style: solid;
+    overflow: hidden; // opacity: 0.5;
+  }
+  &.map-text-content {
+    .bd {
+      display: flex;
+      color: #fff;
+      align-items: center;
+      font-size: 12px;
+      justify-content: center;
+    }
+  }
+}
+
+// 点位hover样式
+body .map-link-content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .title-tooltip {
+    opacity: 1;
+    flex: 1;
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    .ant-tooltip-inner {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .map-icon-content-container {
+    width: 30px;
+    height: 30px;
+  }
+  .map-icon-content-tools {
+    opacity: 1;
+    margin-top: 4px;
+    height: 30px;
+    position: relative;
+  }
+  &:hover{
+    .map-icon-content-title {
+      opacity: 1;
+    }
+    .map-icon-content-tools {
+      opacity: 1;
+    }
+  }
+}
+
+// 同一点位聚合点列表展示样式
+body .map-cluster-list-wrapper {
+  .cluster-list-tooltip {
+    position: relative;
+    pointer-events: unset;
+  }
+  .map-icon-content-container {
+    .map-icon-content {
+      margin: 0 auto;
+    }
+  }
+  .cluster-list-container {
+    overflow-y: auto;
+  }
+  .list-item {
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    .item-name-content {
+      flex: 1;
+      display: flex;
+      .item-icon {
+        width: 24px;
+        height: 24px;
+        .map-icon-content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .bd{
+            width: 16px;
+            height: 16px;
+            position: unset;
+          }
+          .circle{
+            display: none;
+          }
+        }
+      }
+      .item-name {
+        flex: 1;
+        width: 1px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .map-icon-content-tools {
+      display: none;
+      width: auto;
+      align-items: center; 
+      padding-right: 6px;
+      .link-btn{
+        padding-left: 4px;
+        margin: 0;
+        &:hover {
+          color: #ff8800;
+        }
+      }
+    }
+    &:hover {
+      background: #eaedf1;
+      .map-icon-content-tools {
+        display: flex;
+      }
+    }
+  }
+}
+
+.amap-logo {
+  display: none !important;
+}
+.amap-copyright {
+  display: none !important;
+}
+
+body .amap-ui-smp-ifwn-content-body {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+body .amap-ui-smp-ifwn-def-tr-close {
+  display: none;
+}
+body .amap-ui-smp-ifwn-info-title {
+  display: none;
+}
+body .amap-ui-smp-ifwn-combo-sharp {
+  background: #fff;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg) translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: block;
+  border-color: transparent;
+  border-style: solid;
+  margin-left: -4px;
+  display: none;
+}
+body .amap-icon img {
+  width: 100%;
+  height: 100%;
+}

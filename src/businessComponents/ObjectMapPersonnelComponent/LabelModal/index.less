@@ -1,0 +1,93 @@
+.personnel-label-modal {
+  .modal-content {
+    background: #f3f6f9;
+    .label-content{
+      padding: 20px;
+      .type {
+        display: flex;
+        padding-bottom: 24px;
+        .name {
+          width: 36px;
+          padding-top: 2px;
+          font-size: 12px;
+          color: #666666;
+          font-weight: bold;
+        }
+        .value {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .select-active {
+            .ant-select-selection--single {
+              border-color: #ffaa00;
+              color: #ffaa00;
+              .ant-select-arrow {
+                color: #ffaa00;
+              }
+            }
+          }
+          .label {
+            height: 28px;
+            padding: 0 14px;
+            border-radius: 14px;
+            line-height: 26px;
+            margin: 0 8px 8px 0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background: #fff;
+            font-size: 14px;
+            text-align: center;
+            &.label-palce {
+              position: relative;
+              cursor: default;
+              .label-palce-icon {
+                position: absolute;
+                top: -6px;
+                right: -2px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #ccc;
+                .anticon {
+                  position: relative;
+                  top: -7px;
+                  left: -1px;
+                  color: #fff;
+                  font-size: 14px;
+                }
+              }
+            }
+            &.label-chose {
+              border-color: #ffaa00;
+              color: #ffaa00;
+              .label-palce-icon {
+                background: #ffaa00;
+              }
+            }
+          }
+          .ant-select {
+            margin-right: 8px;
+            .ant-select-selection {
+              height: 28px;
+              border-radius: 14px;
+              .ant-select-selection__rendered {
+                line-height: 26px;
+                .ant-select-selection-selected-value {
+                  // color: #ffaa00;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.label-select-drop {
+  border-radius: 12px!important;
+  .ant-select-dropdown-menu {
+    border-radius: 12px!important;
+  }
+}

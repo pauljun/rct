@@ -1,0 +1,94 @@
+.monitee-tasks-add{
+  overflow-y: auto;
+	.task-top{
+		border: 1px solid  #D8DCE3;
+		height: 49px;
+		.tasks-add-title{
+			font-size: 18px;
+			line-height: 48px;
+			width: 1000px;
+			margin: 0 auto;
+			color: #ff8800;
+		}
+	}
+	.ant-form{
+		width: 1000px;
+		margin: 25px auto 0;
+		padding-bottom: 50px;
+	}
+	.header-step-title{
+		height: 28px;
+		font-size: 14px;
+		color: #333;
+		border-bottom: 1px solid #B5BBC7;
+		margin: 0;
+		font-weight: 800;
+		padding-left: 14px;
+	}
+	// 添加布控任务公共样式-以及模拟表单样式修改
+	.monitee-tasks-box{
+		padding: 16px 0px 12px 0px;
+		// antd自带样式修改
+		.ant-form-explain{
+			font-size: 12px;
+		}
+		.monitees-error{
+			font-size: 12px;
+			color: #f5222d;
+			&.repeat-mode-error{
+				padding-left: 125px;
+				margin-bottom: 10px;
+			}
+		}
+		.ant-form-item{
+			.ant-form-item-label{
+				height: 32px;
+				label{
+					line-height: 32px;
+					font-size: 12px;
+					color: #999;
+					font-weight: normal;
+					&::after{
+						margin-right: 0px;
+						margin-left: 3px;
+					}
+				}
+			}
+		}
+		// 模拟表单样式修改
+		.form-group-item{
+			.form-group-item-label-required:not(.no-require){
+				&::before{
+					display: inline-block;
+					margin-right: 4px;
+					content: "*";
+					font-family: SimSun;
+					line-height: 1;
+					font-size: 14px;
+					color: #f5222d;
+				}
+			}
+		}
+		// 公共样式
+		.ant-form-item, .form-group-item{
+			display: flex;
+			margin-bottom: 12px;
+			.ant-form-item-label, .form-group-item-label-required{
+				width: 124px;
+				text-align: right;
+				padding-right: 8px;
+				font-size: 12px;
+				color: #999;
+				line-height: 32px;
+			}
+			.ant-form-item-control-wrapper, .form-group-item-content{
+				flex: 1;
+				.ant-form-item-control{
+					line-height: 32px;
+				}
+			}
+		}
+	}
+}
+
+	

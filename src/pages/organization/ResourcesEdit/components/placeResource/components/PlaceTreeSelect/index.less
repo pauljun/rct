@@ -1,0 +1,38 @@
+@import '../../../../../../../assets/style/vars.less';
+
+.org-place-tb-container{
+  .device-edit-container{
+    height:550px;
+  }
+  .th{
+    // background: @all-bgColor;
+    border: 1px solid;
+    border-radius: 3px 3px 0px 0px;
+    height:30px;
+    width:360px;
+  }
+  .place-tree-select{
+    width:362px;
+    border-radius: 0px 0px 3px 3px;
+    // background: @c-fff;
+    border: 1px solid;
+    margin-right:33px;
+    height:510px;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+    .place-tree{
+      width:100%;
+      flex:1;
+      .ant-tree-node-content-wrapper{
+        min-width:calc(~"100% - 50px")
+        
+      }
+    }
+    .footer-sure{
+      height:40px;
+      line-height:40px;
+      text-align: center;
+    }
+  }
+}

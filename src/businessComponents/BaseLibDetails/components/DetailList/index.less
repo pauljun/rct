@@ -1,0 +1,54 @@
+@import '../../../../assets/style/vars.less';
+
+.detail-box-item{
+  width: 146px;
+  padding: 8px 8px 10px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 3px;
+  user-select: none;
+  .box-img{
+    height: 160px;
+    margin-bottom: 10px;
+    line-height: 160px;
+    text-align: center;
+    img{
+      max-width: 100%;
+      max-height:100%;
+    }
+  }
+  .item{
+    font-size: 12px;
+    position: relative;
+    padding: 0 15px 0 20px;
+    margin-bottom: 5px;
+    color: @c-333;
+    &.item-device-name{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .anticon{
+      position: absolute;
+      top: 1px;
+      left: 0;
+      font-size: 16px;
+      color: @icon-font-color;
+      opacity: .6;
+    }
+    &:last-child{
+      color: @c-666;
+    }
+  }
+  &:hover, &.active{
+    border-color: #ffaa00;
+  }
+  .ant-progress{
+    position: absolute;
+    left: 0;
+    top: 2px;
+    .ant-progress-inner{
+      display: block;
+    }
+  }
+}

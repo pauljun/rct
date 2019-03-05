@@ -1,0 +1,54 @@
+.org-select-user-wrapper{
+  height: 440px;
+  overflow-y: auto;
+  display: flex;
+  .title-part{
+    border-bottom: 1px solid #d8dce3;
+    >span:nth-child(1){
+      color: #333;
+      font-weight: 700;
+    }
+  }
+  >div{
+    .list-part{
+      .item-part {
+        .user-icon-cla{
+          color: #8899bb;
+          font-size: 16px;
+        }
+      }
+    }
+    &.resource-select-tree{
+      i.anticon{
+        color: #8899bb;
+        font-size: 16px;
+      }
+    }
+  }
+  .organization-tree {
+    border: 1px solid #d8dce3;
+    border-radius: 3px 0 0 3px;
+    width: 321px;
+  }
+  .user-all-list{
+    width: 262px;
+    border: 1px solid #d8dce3;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+  }
+  .user-selected-list{
+    // flex: 1;
+    width: 262px;
+    margin-left: 8px;
+    border: 1px solid #d8dce3;
+    border-radius: 3px;
+  }
+  .list-component-layout{
+    .title-part{
+      border-bottom: 1px solid #d8dce3;
+      .input-keword{
+        width: 180px;
+      }
+    }
+  }
+}

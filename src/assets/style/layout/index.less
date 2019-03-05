@@ -1,0 +1,77 @@
+@import "../vars.less";
+@import "../antdStyle/select.less";
+.content-container{
+  .container-header {
+    background: @header-bg;
+  }
+  .left-menu {
+    .ant-layout-sider-children {
+      background: @menu-bg;
+    }
+    .ant-menu-dark,
+    .ant-menu-dark .ant-menu-sub {
+      background: @menu-bg;
+    }
+    
+    .ant-menu.ant-menu-dark .ant-menu-item-selected,
+    .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+      background: transparent;
+    }
+  
+    .ant-layout-sider-children
+      .ant-menu.ant-menu-inline-collapsed
+      .ant-menu-submenu.ant-menu-submenu-selected {
+      background: transparent;
+    }
+  }
+  
+  .menu-tab {
+    & > .ant-tabs-bar {   
+      .ant-tabs-nav-container {                       
+        & > .ant-tabs-tab-prev,
+        & > .ant-tabs-tab-next {
+          color: @c-fff;
+        }         
+        .ant-tabs-tab {
+          &:before {
+            background: @tab-item-normol;
+          }
+          &:after {
+            background: @tab-item-normol;
+          }
+          & > div {
+            color: @c-fff;
+          }
+  
+          .anticon-close {
+            color: @c-fff;
+          }
+          &.ant-tabs-tab-active {
+            &:before {
+              background: #f3f6f9;
+            }
+            &:after {
+              background: #f3f6f9;
+            }
+            > div {
+              color: @c-black;
+            }
+            .anticon {
+              color: #89b;
+            }
+            .anticon-close {
+              color: #8899bb;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-container {
+  .content-wrapper{
+    background: #fff;
+  }
+}
+

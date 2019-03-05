@@ -1,0 +1,39 @@
+@import '../vars.less';
+.place-tree-view{
+  .ant-table-tbody{
+		tr>td{
+			&::after,
+			&::before {
+				background: #d8dce3;
+			}
+			.expand-icon{
+				color:@icon-font-color;
+			}
+			.place-item .place-info .place-info-item {
+				color:@c-333;
+				.anticon{
+					color:@icon-font-color;
+				}
+			}
+		}
+		tr.ant-table-row-selected>td{
+			background-color: @c-fff;
+			&::after,
+			&::before {
+				background: @all-active-orange;
+			}
+			.place-item .place-name{
+				color:@primary-color;
+			}
+		}
+		tr>td .place-item .place-name{
+      color:@c-333;
+    }
+		.ant-table-row-level-0 >td{
+			&::after,
+			&::before {
+				background: @all-bdcolor-gray;
+			}
+		}
+	}
+}

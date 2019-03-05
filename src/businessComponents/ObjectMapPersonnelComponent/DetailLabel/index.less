@@ -1,0 +1,48 @@
+.detail-label {
+  padding-top: 18px;
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-size: 14px;
+      color: #ff8800;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .edit {
+      cursor: pointer;
+      font-size: 12px;
+      &:hover {
+        color: #ffaa00;
+        .anticon {
+          color: #ffaa00;
+        }
+      }
+      .anticon {
+        position: relative;
+        top: 2px;
+        font-size: 16px;
+        color: #8899bb;
+      }
+    }
+  }
+  .label-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background: #fff;
+    min-height: 60px;
+    padding: 16px;
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.10);
+    border-radius: 5px;
+    .label-info {
+      height: 28px;
+      border-radius: 14px;
+      border: 1px solid #ffaa00;
+      padding: 0 14px;
+      margin: 4px;
+      line-height: 26px;
+      color: #ffaa00;
+    }
+  }
+}

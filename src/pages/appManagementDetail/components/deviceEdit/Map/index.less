@@ -1,0 +1,78 @@
+@import '../../../../../assets/style/vars.less';
+
+.operation-container{
+  .operation-device-map{
+    height: 100%;
+    display: flex;
+    .device-list-layout{
+      display: none;
+    }
+    .rect-container{
+      width: 650px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 15px;
+      padding-bottom: 10px;
+      .place-tb-container{
+        flex: 1;
+        height: 100%;
+        .device-edit-container{
+          height: 100%;
+          width: 100%;
+          padding: 0;
+        }
+        .device-tlt{
+          display: none;
+        }
+      }
+      .h3{
+        height: 40px;
+        font-size: 14px;
+        padding-top: 15px;
+        font-weight: bold;
+      }
+      .container{
+        flex: 1;
+        overflow: hidden;
+        .ant-spin-nested-loading{
+          width: 100%;
+          .ant-spin-container{
+            display: flex;
+          }
+        }
+        .c-t{
+          width: 280px;
+          .place-tree-select{
+            border-right: 1px solid @all-bdcolor;
+            height: 100%;
+            .place-tree-container{
+              height: 100%;
+              overflow: hidden;
+              .th{
+                .name{
+                  color: rgba(0,0,0,.65);
+                }
+              }
+              .d-sollot-tb-container{
+                border: 0;
+              }
+              .ant-checkbox-group{
+                height: 100%;
+              }
+            }
+            .ant-checkbox-wrapper{
+              font-size: 12px;
+              .ant-checkbox+span{
+                padding: 0 0 0 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .map-container{
+      flex: 1;
+      height: 100%;
+    }
+  }
+}

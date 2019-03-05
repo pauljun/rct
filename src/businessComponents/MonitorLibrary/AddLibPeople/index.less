@@ -1,0 +1,62 @@
+@import '../../../assets/style/vars.less';
+
+.monitee-multi-people-wrapper {
+  .setFlex(stretch, flex-start, column);
+  .upload-btn-wrapper {
+    margin-bottom: 20px;
+    .upload-tip{
+      margin-left: 20px;
+      span{
+        color: red;
+      }
+    }
+  }
+  // 图片列表样式
+  .img-list-wrapper {
+    .flexNum();
+    overflow-y: auto;
+    overflow-x: hidden;
+    // 文件上传样式
+    .item-uploading {
+      .flexNum();      
+      .setFlex(center,center,column);
+      @keyframes rotation {
+        from { transform: rotate(0deg); } 
+        to { transform: rotate(360deg); }
+      }
+      .rotation {
+        transform: rotate(360deg);
+        animation: rotation 1s linear infinite;
+      }
+    }
+    .item-fail {
+      .flexNum();  
+      overflow: hidden;    
+      margin-left: 10px;
+      margin-right: 7px;    
+      .fail-tip {
+        line-height: 36px;
+        text-align: left;
+        font-size: 12px;
+        color: #FF4466;
+        font-weight: bold;
+      }
+      .fail-opera{
+        margin-top: 6px;        
+        .setFlex();
+        &>div{
+          width: 60px;
+          margin: 0 10px;
+          text-align: center;
+          img{
+            .setWH(32px, 32px);
+            cursor: pointer;
+            display: block;
+            margin:0 auto 8px;
+          } 
+        }
+      }
+    }
+  }
+}
+

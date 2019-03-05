@@ -1,0 +1,30 @@
+@import '../../vars.less';
+
+.alarm-time-radio {
+  .header_filter_radio{
+    .ant-radio-wrapper:hover{
+      .ant-radio-inner{
+        border-color: @primary-color; 
+      }
+    }
+    .ant-radio-wrapper-checked{
+      .ant-radio-inner{
+        border-color: @primary-color; 
+        &::after{
+          background-color: @primary-color;
+        }
+      }
+    }
+  }
+}
+.radio_poppver{
+  .ant-popover-inner-content{
+    .ant-calendar-picker{
+      &:hover,&:focus,&:active{
+        .ant-calendar-picker-input:not(.ant-input-disabled){
+          border-color: @primary-color2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import '../../../../assets/style/vars.less';
+
+.monitee-people-list-item{
+  &:hover{
+    border: 1px solid @c-main;
+    .item-opera {
+      .setFlex();
+    }
+  }
+  width: 310px;
+  height: 144px;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px solid @c-ddd;
+  border-radius: 3px;
+  background: @c-fff;
+  .setFlex(stretch,flex-start);
+  .item-img{
+    position: relative;
+    .setWH(110px,130px);
+    border: 1px solid @c-ddd;
+    border-radius: 3px;
+    overflow: hidden;
+    .img-box{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 128px;
+      img{
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .water-mark-span{
+      left: 30%;
+      top: 75%;
+    }
+    .error-img{
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .item-img-count{
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      padding: 0 10px;
+      background: rgba(0,0,0,0.6);
+      color: @c-fff;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .item-img-err{
+      color: red;
+      left: 5px;
+      right: auto;
+    }
+  }
+  .item-info-container{
+    margin-left: 8px;
+    margin-right: 7px;
+    overflow: hidden;
+    .flexNum();      
+    .item-info-header{
+      height: 36px;
+      .setFlex(center,space-between);
+      border-bottom: 1px solid @c-ddd;
+      .item-name{
+        flex: 1;
+        .ellip();
+        font-size: @fs-14;
+        color: @c-main;
+      }
+      .item-children{
+        display: flex;
+        .ant-checkbox-wrapper{
+          margin-left: 8px;
+          .ant-checkbox{
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .item-info-content{
+      li{
+        font-size: @fs-12;
+        color: #333;
+        margin-top: 5px;
+        .ellip();
+        &>div{
+          margin: 0;
+          div {
+            width: 50%;
+            float: left;
+          }
+        }
+        span{
+          color: #666;
+          width: 40px;
+          text-align: right;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .item-opera{
+    display: none;
+    .item-delete{
+      margin-left: 8px;
+    }
+  }
+}

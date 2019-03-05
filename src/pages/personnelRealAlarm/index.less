@@ -1,0 +1,164 @@
+.person-alarm-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  .person-alarm-left {
+    height: 100%;
+    width: 300px;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &.collapse {
+      margin-left: -300px;
+      > div {
+        .title {
+          width: 0;
+        }
+      }
+      .collapse-btn {
+        .anticon {
+          // color: $c-fff;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .person-alarm-right {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    .alarm-just-button {
+      position: absolute;
+      right: 24px;
+      z-index: 10;
+      top: 10px;
+      .refresh_btn {
+        height: 28px;
+        font-size: 12px;
+      }
+    }
+    .alarm-scroll-height {
+      position: absolute;
+      bottom: 15px;
+      right: 35px;
+      width: 40px;
+      height: 40px;
+      z-index: 10;
+      cursor: pointer;
+      border-radius: 50%;
+      background: url('../../assets/img/monitees/realalarm/toTop_Main.svg') no-repeat center center;
+      &:hover {
+        background: url('../../assets/img/monitees/realalarm/toTop_Main.svg') no-repeat center center;
+      }
+    }
+    .real-alarm-spin-bufferPosition {
+      position: absolute;
+      z-index: 10;
+      top: 45%;
+      left: 50%;
+    }
+    .ant-tabs {
+      height: 100%;
+      .ant-tabs-content {
+        height: calc(~'100% - 48px');
+        .ant-tabs-tabpane {
+          height: 100%;
+          .alarm-tabs-tabscreate {
+            background: #f3f6f9;
+            height: 100%;
+            padding: 24px 100px 20px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: auto;
+            justify-content: center;
+            align-content: space-between;
+            .key-point-card {
+              margin: 12px;
+            }
+            .name-real-alarm-none-il {
+              width: 174px;
+              height: 0;
+              margin: 0 12px;
+            }
+            .name-real-alarm-none {
+              width: 340px;
+              height: 0;
+              margin: 0 12px;
+            }
+            .real-alarm-height {
+              height: 70px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              div {
+                border: 1px solid;
+              }
+            }
+          }
+          .other {
+            padding: 24px 20px 20px 0;
+          }
+        }
+      }
+      .ant-tabs-bar {
+        height: 48px;
+        // background: #f3f6f9;
+        margin: 0;
+        // .ant-tabs-tab-active {
+        //   color: #ffaa00;
+        // }
+        .ant-tabs-nav-container {
+          height: 48px;
+          border-bottom: 1px solid;
+          .ant-tabs-nav-wrap {
+            .ant-tabs-nav-scroll {
+              // background: #f3f6f9;
+              // background: linear-gradient(#F3F6F9, #E3E6E9);
+              .ant-tabs-nav {
+                margin-left: 15px;
+                .ant-tabs-ink-bar {
+                  visibility: inherit;
+                  // background-color: #ffaa00;
+                  height: 3px;
+                }
+                // .ant-tabs-tab {
+                  // background: #f3f6f9;
+                // }
+                div {
+                  .ant-tabs-tab {
+                    border-bottom:2px solid #ffaa00;
+                    text-align: center;
+                    padding: 5px 16px;
+                    margin-right: 15px;
+                    // &:hover {
+                    //   color: #ffaa00;
+                    // }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .person-alarm-right .ant-tabs-nav .ant-tabs-ink-bar{
+    display: none!important;
+  }
+  .ant-tabs-tab{
+    border: 0!important;
+  }
+  .person-alarm-right .ant-tabs-tab.ant-tabs-tab-active{
+    line-height: 40px!important;
+    height: 47px!important;
+    border: 0!important;
+    border-bottom: 2px solid #ff8800!important;
+  }
+  .ant-tabs-nav-container{
+    border:0!important;
+  }
+}

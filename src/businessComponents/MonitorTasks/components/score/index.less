@@ -1,0 +1,102 @@
+.score-slider {
+  // position: relative;
+  line-height: 1;
+  font-size: 14px;
+  left: 70px;
+  display: flex;
+  .tip{
+    line-height: 32px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #333;
+  }
+  &.outersider-style{
+    .ant-slider{
+      &:hover{
+        .ant-slider-track{
+          background-color: #ff8800;
+        }
+      }
+      .ant-slider-track{
+        background: #ff8800;
+      }
+      .ant-slider-step{
+        background:  #B5BBC7;
+      }
+      .ant-slider-handle{
+        z-index: 1;
+      }
+    }
+  }
+  .ant-input-number{
+    box-shadow: none;
+    &.ant-input-number-focused{
+      border-color: #ff8800;
+    }
+    &::selection {
+      background: #ff8800;
+    }
+    &:hover{
+      border-color: #ff8800;
+    }
+    &:focus{
+      border-color: #ff8800;
+    }
+    .ant-input-number-handler-wrap{
+      span:hover{
+        i{
+          color: #ff8800;
+        }
+      }
+    }
+  }
+  .slider{
+    width: 260px;
+    position: relative;
+    padding: 0 30px 0 19px;
+    margin-left: 18px;
+  }
+  .min,
+  .max {
+    position: absolute;
+    top: 9px;
+  }
+  .min {
+    left: -3px;
+  }
+  .ant-slider-rail {
+    background: #eee;
+  }
+  .max {
+    right: -1px;
+  }
+  .ant-slider {
+    margin-top: 10px;
+    .ant-slider-rail{
+      height: 2px;
+    }
+    .ant-slider-track{
+      height: 2px;
+      background: #B5BBC7;
+      z-index: 3;
+    }
+    &:hover{
+      .ant-slider-track{
+        background-color:  #B5BBC7;
+      }
+    }
+    .ant-slider-step{
+      background:  #ff8800;
+      border: 1px solid transparent;
+      height: 2px;
+    }
+    .ant-slider-handle{
+      background: #ff8800;
+      border: none;
+      width: 10px;
+      height: 10px;
+      margin-top: -4px;
+      z-index: 20;
+    }
+  }
+}

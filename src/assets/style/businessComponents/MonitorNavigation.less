@@ -1,0 +1,23 @@
+@import '../vars.less';
+.ant-menu-horizontal.menu-tab-style{
+  .ant-menu-item{
+    .anticon{
+      font-size: 16px;
+    }
+    &.ant-menu-item-selected{
+      border-bottom-color: @primary-color;
+      color: @primary-color;
+      i{
+        color: @primary-color;
+      }
+    }
+    &:hover{
+      border-bottom-color: @primary-color;
+      color: @primary-color;
+    }
+    &:focus{
+      border-bottom-color: @primary-color;
+      color: @primary-color;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+@import '../../assets/style/vars.less';
+
+.operation-center-form{
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 12px;
+  .ant-form-item{
+    margin-bottom: 0;
+    display: flex;
+    .ant-upload-drag-container{
+      background: #1E2742;
+      border-radius: 4px; 
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }    
+  }
+  .ant-form-item-label{
+    width: 120px;
+    label{
+      font-size: 12px;
+      color: @c-999;
+      font-weight: normal;
+    }
+  }
+  .ant-form-item-children{
+    flex: 1;
+    input{
+      font-size: 12px;
+      width: 424px;
+    }
+  }
+  .url-item{
+    width: 800px;
+    font-size: 12px;
+    input {
+      width: 125px;
+      height: 28px;
+      margin-right: 10px; 
+    }
+    .notice{
+      color: #FF4343;
+      margin-left: 20px;
+    }
+  }
+  .hidden{
+    opacity: 0;
+    height: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block !important;
+    z-index: -1;
+  }
+  .sub-group{
+    padding: 20px 0;
+    text-align: center;
+    button{
+      margin: 0 5px;
+    }
+  }
+}
+
+.operation-container{
+  h3{
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #B5BBC7;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    color: @c-333;
+  }
+  .copy-btn{
+    button{
+      width: 78px;
+      height: 28px;
+      font-size: 12px;
+      padding: 0;
+      text-align: center;
+      span{
+        margin-left: 2px;
+      }
+    }
+  }
+  .logo-bg{
+    background: #1E2742;
+    border-radius: 3px;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .anticon{
+      color: @icon-font-color;
+      font-size: 32px;
+    }
+  }
+  .w64{
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+  }
+  .h44{
+    height: 44px;
+    min-width: 140px;
+    overflow: hidden;
+  }
+  .ant-upload.ant-upload-drag {
+    border: 0;
+    width: auto;
+    .ant-upload{
+      padding: 0;
+    }
+  }
+  .sys-logo{
+    .upload-container .upload-content > .ant-upload{
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .upload-container{
+    display: inline-block;
+  }
+  .cooperation-u-logo{
+    .upload-container .upload-content > .ant-upload{
+      width: auto;
+      height: 44px;
+      .ant-upload-drag-container{
+        min-width: 140px;
+        img{
+          max-height: 44px;
+        }
+      }
+    }
+    .ant-upload-btn{
+      width: auto;
+    }
+  }
+  .logo-s{
+    .fl label{
+      margin: 0 5px 0 10px;
+      font-weight: normal;
+      font-size: 12px;
+      color: @c-999;
+      float: left;
+    }
+  }
+  .map-container{
+    width: 900px;
+    height: 506px;
+  }
+  .anticon-question-circle{
+    font-size: 16px;
+    color: @icon-font-color;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+    &:hover{
+      color: @primary-color2;
+    }
+  }
+}
+
+.system-popover{
+  .ant-popover-arrow{
+    background: #181c2a;
+  }
+  .ant-popover-inner-content{
+    background: #181c2a;
+    border-radius: 4px;
+    padding: 8px 10px 8px 0;
+    .notice-item{
+      p{
+        margin: 0;
+        font-size: 12px;
+        line-height: 20px;
+        color: @c-fff;
+      }
+    }
+    .sys-logo{
+      display: flex;
+      .ex{
+        width: 90px;
+        text-align: center;
+        img{
+          width: 64px;
+          height: 64px;
+        }
+      }
+      .ec{
+        flex: 1;
+      }
+    }
+  }
+  .co-logo-popover{
+    color: @c-fff;
+    padding: 0 20px;
+    .t-con{
+      display: flex;
+      margin-bottom: 10px;
+      .t1,.t2{
+        font-size: 12px;
+        &>div{
+          margin-bottom: 3px;
+        }
+      }
+      .t1{
+        width: 200px;
+      }
+      .t2{
+        width: 320px;
+      }
+    }
+  }
+}

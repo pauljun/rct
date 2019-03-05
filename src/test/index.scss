@@ -1,0 +1,13 @@
+.draw-test{
+  width: 200px;
+  height:200px;
+  background: yellowgreen;
+ 
+  span{
+    color:#fff;
+    font-size: 12px;
+    display: block;
+    transform: scale(1.8);
+    white-space: normal;
+  }
+}

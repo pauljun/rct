@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--分享卡描述预埋meta-->
+    <meta itemprop="image" content="//mma.qq.com/timtest/img/logo-tim.png" />
+    <!--分享卡图片URL预埋meta-->
+    <title>智慧云社区-关于</title>
+    <link rel="stylesheet" href="./about/support.css" />
+  </head>
+
+  <body style="padding-top:0px;background-color: #ebebeb;">
+    <div>
+      <img src="/resource/about/background.svg" />
+    </div>
+    <div class="l-content" id="logs">
+      <div class="update-log">最近更新</div>
+      <div class="version-list" id="logs-content"></div>
+    </div>
+    <script>
+      //获取用户系统名称，修改title
+      var href = window.location.href;
+      var url = href.split('?').shift() + '?';
+      var sysName = decodeURI(href.replace(url, ''));
+      document.title = sysName + '-关于';
+      function loadXMl(url, callBack) {
+        var xmlHttp;
+        if (window.XMLHttpRequest) {
+          xmlhttp = new XMLHttpRequest();
+        } else {
+          xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var data = JSON.parse(xmlhttp.responseText);
+            callBack(data.about);
+          }
+        };
+        xmlhttp.open('GET', url, true);
+        xmlhttp.send();
+      }
+      function dataText(data) {
+        var str = '';
+        var newContent = data[0];
+        str +=
+          "<div class='version-item newest'>" +
+          "<div class='newversion'>" +
+          newContent.name +
+          "<span class='update-time'>" +
+          newContent.time +
+          '</span>' +
+          '</div>' +
+          "<div class='newfunc'>";
+
+        newContent.function.map((v, index) => {
+          str +=
+            "<div class='newfunc-list'>" +
+            v.item +
+            '<br>' +
+            v.content +
+            '</div>';
+        });
+        str +=
+          '</div>' +
+          '</div>' +
+          "<div class='history-version'>" +
+          "<div class='history-version-title'>历史版本</div>" +
+          '</div>';
+
+        data.map((v, index) => {
+          if (index === 0) {
+            return;
+          }
+          str +=
+            "<div class='history-version-item'>" +
+            "<div class='clickup'>收起" +
+            "<span class='blue-up'></span>" +
+            '</div>' +
+            "<div class='history-version-item-title'>" +
+            v.name +
+            '&nbsp;&nbsp;&nbsp;&nbsp;' +
+            v.time +
+            "<span class='arrow'></span>" +
+            '</div>' +
+            "<div class='history-version-item-content'>" +
+            "<div class='newfunc'>";
+          v.function.map((item, index) => {
+            str +=
+              "<div class='newfunc-list'>" +
+              item.item +
+              '<br>' +
+              item.content +
+              '</div>';
+          });
+          str += '</div>' + '</div>' + '</div>';
+        });
+        str = str.replace(/智慧云眼/g, '');
+        var ele = document.getElementById('logs-content');
+        ele.innerHTML = str;
+        var histotyEle = document.querySelector('.history-version-item-title');
+        var histotyItemEle = document.querySelectorAll('.history-version-item');
+        for (var i = 0; i < histotyItemEle.length; i++) {
+          histotyItemEle[i].addEventListener('click', function() {
+            if (this.className.indexOf('histoty') === -1) {
+              this.className += ' histoty';
+            } else {
+              this.className = 'history-version-item';
+            }
+          });
+        }
+      }
+      loadXMl('/resource/about.json?v=' + new Date().valueOf(), dataText);
+    </script>
+  </body>
+</html>

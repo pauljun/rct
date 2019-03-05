@@ -1,0 +1,47 @@
+.event-monitor-statistics-chart {
+  width: 100%;
+  height: 100%;
+  .circle-word {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    @media screen and (max-width: 1366px) {
+      .circle-word-count {
+        div:nth-child(2) {
+          font-size: 16px !important;
+        }
+      }
+      .circle-nohandle-count {
+        div:nth-child(2) {
+          font-size: 16px !important;
+        }
+      }
+    }
+    .circle-word-count {
+      margin-top: -3px;
+      div {
+        text-align: center;
+      }
+      div:nth-child(2) {
+        font-size: 24px;
+        color: #151515;
+      }
+    }
+    .circle-nohandle-count {
+      margin-top: 6px;
+      div {
+        text-align: center;
+      }
+      div:nth-child(2) {
+        font-size: 24px;
+        color: #ffaa00;
+      }
+    }
+  }
+}

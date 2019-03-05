@@ -1,0 +1,53 @@
+.alarm-time-radio {
+  .header_filter_radio{
+    .ant-radio-wrapper:hover{
+      .ant-radio-inner{
+        border-color: #FF8800; 
+      }
+    }
+    .ant-radio-wrapper-checked{
+      .ant-radio-inner{
+        border-color: #FF8800; 
+        &::after{
+          background-color: #FF8800;
+        }
+      }
+    }
+  }
+}
+.radio_poppver{
+  .ant-popover-inner-content{
+    height: 140px;
+    &>div{
+      width: 195px;
+    }
+    .pop_btn {
+      display: flex;
+      justify-content: center;
+      .ant-btn:first-child {
+        margin-right: 8px;
+      }
+    }
+    .ant-calendar-picker{
+      &:hover,&:focus,&:active{
+        .ant-calendar-picker-input:not(.ant-input-disabled){
+          border-color: #ffaa00;
+        }
+      }
+    }
+    .range-picker-wrapper{
+      width: 195px;
+      height: auto;
+      margin: 0 auto;
+      zoom: normal;
+      .date-picker-wrapper{
+        width: 195px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+      }
+      .date-picker-divider{
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.cache/
+/node_modules/
+/build/
+/scripts/
+/config/
+/coverage/
+/src/libs/*
+/src/serviceWorker.js
+/public/static/

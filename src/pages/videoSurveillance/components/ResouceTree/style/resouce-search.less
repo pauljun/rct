@@ -1,0 +1,201 @@
+.resource-search {
+  width: 100%;
+  height: calc(~'100% - 72px');
+  .tab-layout {
+    padding: 0 16px 16px;
+    display: flex;
+    height: 44px;
+    overflow: hidden;
+    .tab-item {
+      flex: 1;
+      text-align: center;
+      height: 28px;
+      line-height: 27px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:first-child {
+        border-radius: 3px 0 0 3px;
+      }
+      &:last-child {
+        border-radius: 0 3px 3px 0;
+      }
+    }
+  }
+  .resource-part {
+    height: calc(~'100% - 44px');
+    .org-tree-with-device-layer {
+      .ant-tree-title {
+        &>span {
+          span:nth-of-type(1) {
+            flex: 1;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 1px;
+          }
+        }
+        .tree-node-suffix {
+          padding-right: 0;
+          i{
+            font-style: normal;
+          }
+        }
+      }
+    }
+    &.hide-resource {
+      display: none;
+    }
+  }
+  .collection-part {
+    height: calc(~'100% - 44px');
+    overflow: auto;
+    user-select: none;
+    .group-action{
+      height:50px;
+      display: flex;
+      justify-content:space-between;
+      padding:0 16px;
+      .group-num-info{
+        font-size: 12px;
+        span{
+          display:inline-block;
+          width: 75px;
+          text-align: right;
+        }
+      }
+      button{
+        margin-top:2px;
+        width: 104px;
+        height:28px;
+        font-size: 12px;
+      }
+    }
+    &.hide-collection {
+      display: none;
+    }
+    .ant-collapse {
+      border-radius: 0;
+    }
+    .ant-collapse-item {
+      margin-bottom: 1px;
+      border-bottom: none;
+    }
+    .collection-list-layout {
+      background: transparent;
+      height:calc(~'100% - 50px');
+      .ant-collapse{
+        height:100%;
+      }
+    }
+    .collection-list-layout .ant-collapse-header {
+      height: 28px;
+      line-height: 26px;
+      padding: 0 8px !important;
+      font-size: 14px;
+      position: relative;
+      .anticon {
+        font-size: 16px;
+        padding-right: 2px;
+      }
+      .group-name-layout {
+        display: flex;
+        align-items: center;
+        .group-name {
+          flex: 1;
+          white-space:nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .device-count {
+          font-size: 12px;
+          padding: 0 2px;
+          i {
+            font-style: normal;
+          }
+        }
+        .group-tools {
+          .anticon {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    .ant-collapse-content-box {
+      padding: 0 !important;
+    }
+    .device-list-content {
+      min-height: 300px;
+      .device-item {
+        cursor: pointer;
+        padding: 1px 0 0 0;
+        height: 25px;
+        & > .device-item-layout {
+          width: 100%;
+          height: 100%;
+          line-height: 24px;
+          font-size: 12px;
+          transition: all 0.3s;
+          display: flex;
+          align-items: center;
+          padding-left: 5px;
+          border-radius: 2px;
+        }
+        .anticon {
+          padding-right: 10px;
+        }
+        &:hover {
+          .device-item-tools {
+            display: inline-block;
+          }
+        }
+        .device-name {
+          width: calc(~'100% - 26px - 26px');
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: inline-block;
+        }
+        .device-item-tools {
+          display: none;
+          float: right;
+          .anticon {
+            padding-right: 0;
+            padding-left: 5px;
+            font-size: 16px;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+  .form-search {
+    height: 90px;
+    overflow: hidden;
+    padding: 0 16px 16px;
+    font-size: 12px;
+    .ant-input {
+      font-size: 12px;
+    }
+    .search-type {
+      display: flex;
+      padding-top: 10px;
+
+      .ant-select {
+        font-size: 12px;
+        flex: 1;
+        &:first-child {
+          margin-right: 1px;
+        }
+        &:last-child {
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+
+  .org-tree-with-device {
+    height: calc(~'100% - 90px');
+  }
+}

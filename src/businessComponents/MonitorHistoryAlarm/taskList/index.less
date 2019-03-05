@@ -1,0 +1,210 @@
+.alarm-list {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  //复选框样式修改
+  .ant-checkbox-wrapper {
+    .ant-checkbox-inner {
+      width: 18px;
+      height: 18px;
+    }
+    .ant-checkbox.ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: transparent;
+        background-image: url('../../../assets/img/monitees/checkall.svg');
+        background-size: 16px 16px;
+        border: 1px solid !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .list-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px 8px 17px;
+    border-bottom: 1px solid;
+    .list-total-text {
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .list-total-checkbox {
+      .checkbox-span {
+        font-size: 12px;
+        margin-right: 4px;
+      }
+    }
+    .ant-checkbox.ant-checkbox-indeterminate {
+      .ant-checkbox-inner {
+        border: 1px solid;
+        &::after {
+          content: '';
+          border: 1px solid;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 50%;
+          height: 2px;
+        }
+      }
+    }
+    .ant-checkbox.ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-image: url('../../../assets/img/monitees/checkall.svg');
+      }
+    }
+    .ant-checkbox-inner {
+      border: 1px solid;
+    }
+  }
+  .ant-checkbox-group {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .change-class {
+    text-align: center;
+    margin-bottom: 15px;
+    button {
+      width: 80px;
+      height: 29px;
+      padding: 0px;
+    }
+    button:hover {
+      color: #ff8800;
+      border: 1px solid;
+    }
+    button.active {
+      border: 1px solid transparent;
+    }
+    button:nth-child(2) {
+      margin: 0 4px;
+    }
+  }
+  .search-group {
+    padding: 0 16px;
+    border-bottom: none;
+    margin: 12px 0 15px;
+  }
+  .list {
+    flex: 1;
+    padding: 0 0 10px 0;
+    overflow-y: auto;
+    height: auto;
+    position: relative;
+    &.task-list {
+      border-top: 1px solid;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    .ant-list-item {
+      margin: 0px;
+      padding: 0px;
+      border: none;
+      .ant-list-item-content {
+        box-shadow: none;
+      }
+    }
+    .item {
+      padding: 8px 16px;
+      height: 60px;
+      border-bottom: 1px solid;
+      width: 100%;
+      cursor: pointer;
+      &.active:not(.check-all) {
+        box-shadow: 0 1px 2px #ccc;
+        border-left: none;
+        &:last-child {
+          box-shadow: none;
+        }
+      }
+      .title-name {
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .title-tl {
+          max-width: 170px;
+          display: inline-block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          vertical-align: top;
+        }
+        span:nth-child(2) {
+          font-size: 14px;
+        }
+      }
+      .item-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4px;
+        .item-teype {
+          font-size: 12px;
+          position: relative;
+          height: 17px;
+          line-height: 17px;
+
+          span:nth-child(2) {
+            margin-right: 0px;
+          }
+        }
+        .item-num {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 80px;
+          .num {
+            float: right;
+            height: 18px;
+            min-width: 26px;
+            line-height: 16px;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 9px;
+            margin-top: 1px;
+            font-size: 12px;
+            padding: 0 5px;
+          }
+          .num-box {
+            width: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .anticon {
+              font-size: 16px;
+            }
+            .icon-span {
+              position: static;
+              float: right;
+              transform: translateY(0);
+              font-size: 16px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.checkbox-span-pop {
+  .ant-popover-inner-content {
+    padding: 2px 4px;
+  }
+  .checkbox-span-pop-div {
+    font-size: 12px;
+    color: #333;
+  }
+}

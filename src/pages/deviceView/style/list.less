@@ -1,0 +1,188 @@
+
+.device-setting-wrapper{
+  .base-tree-component li{
+    overflow: hidden;
+    .ant-tree-title > span{
+      &>span{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 200px
+      }
+    }
+  }
+  .setting-breadcrumb-container{
+    margin-left:0px;
+    background-image: linear-gradient(-180deg, #F3F6F9 0%, #E3E6E9 98%);
+    .ant-breadcrumb{
+      margin-left:24px;
+      &>span{
+        .anticon{
+          margin-right:4px;
+        }
+      }
+    }
+  }
+
+  .setting-device-search {
+    float: right;
+    .ant-form-item {
+      display: inline-block;
+      margin-left: 10px;
+      margin-bottom: 0;
+      margin-top: 4px;
+      &:first-child {
+        .ant-form-item-control-wrapper {
+          max-width: 160px;
+          width: 160px;
+        }
+      }
+      .ant-form-item-control-wrapper {
+        display: inline-block;
+        max-width: 120px;
+        .ant-form-item-children-icon {
+          display: none;
+        }
+      }
+    }
+    .search-group {
+      display: inline-block;
+      margin-top: 8px;
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  .device-table-content {
+    height:100%;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .serach-form {
+      padding: 16px 0;
+      display:flex;
+      .ant-btn{
+        position:relative;
+        top:4px;
+        margin-right:8px;
+      }
+      .ant-form.ant-form-inline{
+        display:flex;
+        justify-content: space-between;
+        flex: 1;
+      }
+    }
+    .ant-form-item {
+      flex:1;
+      padding-bottom: 8px;
+      display:flex;
+      margin-right:0px;
+      margin-left:8px;
+    }
+    .device-search{
+      width: 200px;
+      margin-left:10px;
+    }
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 14px;
+      padding-bottom: 8px;
+    }
+    .ant-form-item-control-wrapper {
+      display: block;
+      width: 100%;
+      padding-left: 0;
+    }
+    .form-btn-group {
+      height: 32px;
+      text-align: center;
+      button {
+        margin: 0 10px;
+        width: 90px;
+        height: 32px;
+      }
+    }
+    .action-group {
+      height: 40px;
+      text-align: right;
+    }
+    .device-container {
+      flex:1;
+      overflow: auto;
+      .setting-table {
+        height: calc(~"100% - 80px");
+      }
+      .ant-table-wrapper,
+      .ant-spin-nested-loading,
+      .ant-spin-container,
+      .ant-tabl,
+      .ant-table-default,
+      .ant-table-content,
+      .ant-table-scroll {
+        height: 100%;
+      }
+      .ant-table-scroll {
+        overflow: hidden;
+      }
+      .ant-table-header {
+        overflow: hidden !important;
+        // background: #d8dce3;
+        height: 37px;
+        margin: 0 !important;
+        padding-right: 8px;
+        .ant-table-thead {
+          height: 37px;
+          overflow: hidden;
+          tr {
+            th {
+              // background: #d8dce3;
+              font-weight: bold;
+              padding: 0 16px;
+              height: 37px;
+            }
+          }
+        }
+      }
+      .ant-table-selection-column {
+        width: 24px;
+        min-width: 24px;
+        padding: 10px 0 10px 10px !important;
+      }
+      .ant-table-body {
+        max-height: calc(~"100% - 37px") !important;
+        overflow: auto;
+      }
+    }
+  
+    .device-table-name {
+      .anticon {
+        font-size: 16px;
+        position: relative;
+        top: 2px;
+        padding-right: 4px;
+      }
+    }
+  
+    .ant-pagination {
+      padding-top: 20px;
+      height: 80px;
+    }
+  
+  }
+@media screen and (max-width:1366px){
+  .setting-container{
+    width:980px!important;
+  }
+}
+}
+
+// 适配1366屏幕下分配设备弹框太高的问题
+@media screen and (max-width:1366px){
+  .modal-org-select{
+    &.modal-org-select-tl{
+      height: 400px;
+    }
+  }
+}

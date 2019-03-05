@@ -1,0 +1,49 @@
+.place-management-tree-view{
+	width: 300px;
+	height: 100%;
+	background: #EAEDF1;
+	// overflow: auto;
+	.place-management-tree-search{
+		height: 52px;
+		width: 100%;
+		padding:10px 16px;
+		border-bottom:1px solid; 
+		margin-bottom: 8px;
+	}
+	.ant-tree>li:first-child {
+		padding: 4px 0;
+	}
+	.ant-tree {
+		height: calc(~'100% - 52px');
+		overflow: auto;
+		li {
+			position: relative;
+			.tree-node-suffix {
+				font-size: 15px;
+				position: absolute;
+				top: 2px;
+				right: 8px;
+				line-height: 20px;
+			}
+			.ant-tree-node-content-wrapper{
+				width: calc(~'100% - 24px');
+			}
+			
+			span.ant-tree-iconEle{
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				margin: 2px 0; 
+				
+			}
+			.ant-tree-title{
+				font-size: 12px;
+				width: calc(~'100% - 40px');
+				display: inline-block;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+		}
+	}
+}

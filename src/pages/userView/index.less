@@ -1,0 +1,129 @@
+.user-check-view{
+    width:598px;
+    height:465px;
+    .ant-modal-content{
+      height:calc(~'100%-48px');
+      overflow: hidden;
+      .ant-modal-body{
+        display: flex;
+        flex-direction: column;
+        padding:0px;
+        height: calc(~"100% - 40px");
+        .user-info-edit{
+          text-align:center;
+          height:40px;
+          line-height: 40px;
+        }
+        // .modal-content{
+        //   background:#f3f6f9;
+        // }
+      }
+    }
+}
+.user-setting-wrapper{
+  .base-tree-component li{
+    overflow: hidden;
+    .ant-tree-title > span{
+      &>span{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 200px
+      }
+    }
+  }
+  height:100%;
+  .setting-breadcrumb-container{
+    margin-left:0px;
+    background-image: linear-gradient(-180deg, #F3F6F9 0%, #E3E6E9 98%);
+    .ant-breadcrumb{
+      margin-left:24px;
+      &>span{
+        // color: rgba(0, 0, 0, 0.65);
+        .anticon{
+          // color: #89b;
+          margin-right:4px;
+        }
+      }
+    }
+  }
+  .setting-container{
+    margin-top: 36px !important
+  }
+  .user-container-search{
+    display: flex;
+    justify-content: space-between;
+    height:40px;
+    margin-bottom: 16px;
+  }
+  .user-listTitle{
+    width: 100%;
+    .ant-col-18{
+      width:100%
+    }
+  }
+.user-content {
+  height: calc(~"100% - 16px");
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .user-Search-Btns{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:16px;
+    .ant-input-search{
+      height:32px;
+      margin-right:10px;
+    };
+    .form-btn-group{
+      display:flex;
+      .icon-span{
+        position: relative;
+        top:5px;
+        padding-right:3px;
+      }
+    }
+    .user-search-container{
+      display:flex;
+      .setting-user-add{
+        margin-top:4px;
+      }
+      .user-filters{
+        margin-left:10px;
+        .ant-select-selection{
+          width:200px;
+        }
+      }
+    }
+  }
+  .user-content-table{
+      .ant-table-thead {
+        height: 37px;
+        overflow: hidden;
+        tr {
+          th {
+            // background: #d8dce3;
+            font-weight: bold;
+            padding: 0 16px;
+            height: 37px;
+          }
+        }
+      }
+  }
+  .setting-table{
+    flex:1;
+    overflow-y: auto;
+    // .disabled{color:grey};
+  }
+  .ant-pagination {
+    padding-top:20px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width:1366px){
+  .setting-container{
+    width:952px!important;
+  }
+}
+}

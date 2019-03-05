@@ -1,0 +1,27 @@
+@import '../../vars.less';
+.capture-card-item{
+  border: 2px solid transparent;
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1);
+  &:hover{
+    border: 2px solid @all-active-orange;
+  }
+  .item-img-box{
+    background: #eaedf1;
+    .anticon{
+      color: @c-fff;
+      background: @c-main;
+    }
+  }
+  .item-info{
+    .item{
+      color: @c-333;
+      .anticon{
+        color: #b8c2d7;
+        vertical-align: -.22em;
+      }   
+      &.plate-number{
+        color: @c-main;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../assets/style/vars.less';
+
+.place-tree-container{
+  height: 100%;
+  border-right: 0;
+  padding: 0;
+  overflow-y: auto;
+  .ant-tree{
+    padding: 6px 10px;
+    &>li{
+      font-size: 12px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .ant-tree-child-tree{
+      padding-top: 0;
+      padding-bottom: 0;
+      li{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    .anticon{
+      color: @icon-font-color;
+    }
+    .ant-tree-node-content-wrapper{
+      padding-left: 0;
+      &.ant-tree-node-selected{
+        background-color: #eaedf1;
+      }
+      .anticon{
+        font-size: 16px;
+        vertical-align: -.25em;
+      }      
+    }
+    .ant-tree-switcher {
+      width: 18px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.capture-card-item{
+  width: 172px;
+  padding: 7px 7px 0;
+  border: 2px solid transparent;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1);
+  margin: 0 20px 20px 0;
+  &:hover{
+    border: 2px solid #fa0;
+  }
+  .item-img-box{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #eaedf1;
+    border-radius: 3px;
+    &.item-img-hover{
+      &:hover{
+        img{
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+      }
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s;
+    }
+    .anticon{
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      color: #fff;
+      top: 6px;
+      left: 6px;
+      border-radius: 3px;
+      background:#f80;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .item-info{
+    padding-top: 8px;
+    .item{
+      font-size: 12px;
+      height: 17px;
+      line-height: 17px;
+      margin-bottom: 7px;
+      color: #333;
+      overflow: hidden;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      >.ant-progress{
+        margin-right: 4px;
+      }
+      .anticon{
+        color: #b8c2d7;
+        font-size: 16px;
+        margin-right: 4px;
+        vertical-align: -.22em;
+      }      
+      &:last-child{
+        margin-bottom: 2px;
+      }
+      &.plate-number{
+        color: #f80;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+  .ant-checkbox-wrapper{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+  }
+}

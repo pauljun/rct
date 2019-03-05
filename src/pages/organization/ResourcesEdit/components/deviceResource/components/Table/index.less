@@ -1,0 +1,79 @@
+@import '../../../../../../../assets/style/vars.less';
+
+.d-sollot-tb-container{
+  border: 1px solid @all-bdcolor;
+  height: 100%;
+  .ant-checkbox-group{
+    height: calc(~'100% - 80px');
+    width: 100%;
+    padding: 0 0 10px;
+  }
+  .list-container{
+    height: 100%;
+    .item{
+      display: flex;
+      font-size: 12px;
+      padding: 0 15px;
+      color: @c-333;
+      height: 24px;
+      line-height: 24px;
+      justify-items: center;
+      &>div{
+        .ellip();
+      }
+      .name{
+        width: 200px;
+      }
+      .sn{
+        width: 120px;
+        margin: 0 10px;
+      }
+      .group{
+        flex: 1;
+      }
+      .anticon{
+        margin: 0 2px;
+        vertical-align: -0.25em;
+      }
+      &.th{
+        height: 32px;
+        line-height: 32px;
+        border-bottom: 1px solid @all-bdcolor;
+        background: @all-bgColor;
+        font-weight: bold;
+        .ant-checkbox-wrapper{
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+  .search-container{
+    height: 48px;
+    display: flex;
+    padding: 10px;
+    .s1, .s2{
+      width: 100px;
+      margin-right: 10px;
+      .ant-select{
+        width: 100%;
+        height: 28px;
+        .ant-select-selection{
+          height: 100%;
+          font-size: 12px;
+        }
+        .ant-select-selection__rendered{
+          line-height: 26px;
+        }
+      }
+    }
+    .s3{
+      flex: 1;
+    }
+  }
+}
+
+.ant-select-dropdown{
+  li{
+    font-size: 12px;
+  }
+}

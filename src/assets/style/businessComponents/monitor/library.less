@@ -1,0 +1,256 @@
+@import '../../vars.less';
+
+// ------------------布控库添加界面---------------------------------
+.monitee-lib-add-wrapper{
+  .lib-add-content-container{
+    // 布控库人员添加样式
+    .lib-add-people-wrapper {
+      .lib-add-people-title{
+        color: @all-color;
+      }
+    }
+  }
+}
+
+// ------------------布控库查看or编辑界面----------------------
+.monitor-spin-wrapper {
+  .ant-spin.monitor-spin-content{
+    background: rgba(0,0,0,0.2);
+  }
+}
+// 编辑布控库样式
+.monitee-lib-edit-wrapper{
+  .monitee-form-lib-info {
+    background: @all-bgColor;
+    border: 1px solid @all-bdcolor;
+  }
+  // 本地添加人员
+  .monitee-people-wrapper{
+    background: @all-bgColor;
+    border: 1px solid @all-bdcolor;
+  }
+}
+
+
+.lib-btn.ant-btn{
+  color: @c-main;
+  border: 1px solid @c-main;
+  &:hover{ 
+    color: @c-fff;
+    background: @c-main;
+  }
+}
+// 布控库弹窗样式
+.monitee-lib-modal{
+  .ant-modal-body{
+    background: @all-bgColor;
+    .orgTree{
+      background: @c-fff;
+    }
+    .lib-delete-content{
+      p{
+        span{
+          color: @c-main;
+        }
+      }
+    }
+  }
+}
+
+// ------------------布控库组件样式----------------------
+// ------AddLibPeople组件
+.monitee-multi-people-wrapper {
+  .upload-btn-wrapper {
+    .upload-tip{
+      span{
+        color: red;
+      }
+    }
+  }
+  .img-list-wrapper {
+    .item-fail {   
+      .fail-tip {
+        color: @all-red;
+      }
+    }
+  }
+}
+
+// ------FormLibInfo组件
+.ant-form.monitee-form-lib-info{
+  .ant-form-item{
+    .ant-form-item-label{
+      >label{
+        color: @c-999 !important;        
+      }
+    }
+    .ant-form-item-control-wrapper{
+      color: @c-333;
+    }
+  }
+  .promission-container{
+    .org-select-user-wrapper{
+      .tlzj-org-tree{
+        >.ant-tree{
+          background-color: @c-fff;
+        }
+      }
+      .org-device-wrapper{
+        background-color: @c-fff;
+      }
+    }
+    .ant-form-explain{
+      color: #f5222d;
+    }
+  }
+}
+
+// ---------FormPeopleInfo组件
+.monitee-form-people-info-wrapper {
+  .ant-row {
+    .img-list-wrapper {
+      .img-list {
+        .img-wrapper {
+          .img-btn-wrapper {
+            background: rgba(0, 0, 0, 0.5);
+            .anticon {
+              color: @c-fff;
+            }
+          }
+          .img-err{
+            color: red;
+          }
+        }
+      }
+    }
+    .upload-div-wrapper {
+      background: @c-fff;
+      .ant-upload-text {
+        color: @c-999;
+      }
+    }
+  }
+  .ant-form-item{
+    .ant-form-item-label{
+      label{
+        color: @c-999;
+      }
+    }
+  }
+}
+
+// -------LibDetail组件
+.lib-info-container{
+  .lib-info{
+    .info-label {
+      color: @c-999;
+    }
+    .info-value {
+      color: @c-333;
+    }
+  }
+  .lib-manager{
+    .lib-manager-list{
+      .list-item {
+        color: @c-333;
+      }
+    }
+  }
+  .machine-desc {
+    textarea{
+      color: @c-333;
+    }
+  }
+}
+
+// -------LibHeader组件
+.monitee-lib-common-header-wrapper{
+  border-bottom: 1px solid @all-bdcolor-gray;
+  .title-container{
+    .title {
+      color: @c-333;
+    }
+    .sub-title{
+      color: @c-666;
+    }
+  }
+}
+
+// -------LibList组件
+.monitee-lib-list-wrapper{
+  background: #EAEDF1;  
+  .lib-list-header{
+    background: @all-bdcolor; 
+  }
+  .lib-list-container{
+    .lib-list-search{
+      border-bottom: 1px solid @c-ddd;
+    }
+    .lib-list-content {
+      &::-webkit-scrollbar-track{
+        background-color: #EAEDF1;
+      }
+      .ant-list {
+        .ant-list-item {
+          height: 40px;
+          border-bottom: 1px solid #e3e3e3;
+          .item {
+            // &:hover {
+            //   background: rgba(255,255,255,0.6);
+            // }
+            color: @c-333;
+            .item-del {
+              color: @icon-font-color;
+              &:hover{
+                color: @primary-color;
+              }
+            }
+          } 
+          .item.active {
+            color: @c-main;
+            background: @c-fff;
+            border-top: 1px solid @c-main;
+            border-bottom: 1px solid @c-main;
+          }
+        }
+      }
+    }   
+  }
+}
+
+// -------PeopleCard组件
+.monitee-people-list-item{
+  &:hover{
+    border: 1px solid @c-main;
+  }
+  border: 1px solid @c-ddd;
+  background: @c-fff;
+  .item-img{
+    border: 1px solid @c-ddd;
+    .item-img-count{
+      background: rgba(0,0,0,0.6);
+    }
+  }
+  .item-info-container{
+    .item-info-header{
+      border-bottom: 1px solid @c-ddd;
+      .item-name{
+        color: @c-main;
+      }
+    }
+    .item-info-content{
+      li{
+        color: @c-333;
+        span{
+          color: @c-666;
+        }
+      }
+    }
+  }
+}
+
+// ------------UploadPeople组件
+.monitee-people-upload-tip-wrapper{
+  color: @c-666;
+}
+

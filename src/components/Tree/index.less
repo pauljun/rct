@@ -1,0 +1,28 @@
+.base-tree-component{
+  padding:10px 0;
+  li{
+    width: 100%;
+  }
+  li span.ant-tree-switcher {
+    position: relative;
+    top: -2px;
+    left: 8px;
+    z-index: 2;
+    margin-right: 5px;
+  }
+  li span.ant-tree-node-content-wrapper{
+    font-size: 12px;
+    min-width: calc(~"100% - 24px - 16px");
+    position: relative;
+    display: inline-flex;
+  }
+  .ant-tree-treenode-switcher-open,
+  .ant-tree-treenode-switcher-close {
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../vars.less';
+.event-detail {
+  background: #f3f6f9;
+  .event-detail-header {
+    .header-button-content {
+      .header-btn {
+        color: #fff;
+        &:first-child {
+          margin-right: 16px;
+          background-image: linear-gradient(-180deg, #25DC9B 0%, #0FC484 95%);
+          &:active,
+          &:hover,
+          &:focus {
+            background-image: linear-gradient(-180deg, #0FC484 0%, #0AAC72 100%);
+          }
+        }
+        &:last-child {
+          background-image: linear-gradient(-180deg, #FFBB22 0%, #FFAA00 100%);
+          &:active,
+          &:hover,
+          &:focus {
+            background-image: linear-gradient(-180deg, #FFAA00 0%, #FF8800 100%);
+          }
+        }
+      }
+    }
+  }
+  .event-detail-message {
+    .center-box {
+      border-color: #ccc;
+      background: #fff;
+      .header {
+        border-bottom-color: #ccc;
+        .name {
+          color: @primary-color;
+        }
+      }
+      .message {
+        .message-title {
+          color: #333333;
+          .message-value {
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+  .details-text-handled{
+    border-color: #ccc;
+    background: #fff;
+    .detail-span{
+      color: #333333;
+    }
+  }
+}

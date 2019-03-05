@@ -1,0 +1,155 @@
+// @import 'src/assets/css/base';
+
+.place-file-view{
+	position: absolute;
+	width: 100%;
+	height: calc(~"100% - 50px");
+	.place-file-nav{
+		width: 100%;
+		height: 48px;
+		display: flex;
+		border-bottom: 1px solid ;
+		.place-file-title{
+			width: 300px;
+			text-align: center;
+			line-height: 48px;
+			padding: 0 16px;
+			display: flex;
+			justify-content: space-between;
+			.panel-name{
+				font-size: 18px;
+				font-weight: 700;
+			}
+			.place-num-box{
+				display: flex;
+				.place-num-title{
+					font-size: 14px;
+				}
+			}
+		}
+		.place-file-header{
+			flex: 1;
+		}
+	}
+	.place-file-content{
+		display: flex;
+		width: 100%;
+		height:calc(~'100% - 48px');
+		.place-list-view{
+			width: 300px;
+			height: 100%;
+			.list-search{
+				height: 65px;
+				padding: 16px;
+			}
+		}
+		.place-detail-view{
+			flex:1;
+			height: 100%;
+			overflow: auto;
+			padding:0 20px;
+			padding-bottom: 40px;
+			.place-content-view{
+				max-width: 1080px;
+				min-width: 680px;
+				margin: 0 auto;
+				.radio-group-wrapper .search-title{
+					display: none;
+				}
+				.place-info-view{
+					width: 100%;
+					height: 207px;
+					padding: 17px 23px;
+					.place-info-header{
+						p{
+							font-family: PingFang-SC-Bold;
+							font-size: 14px;
+							font-weight: 700;
+						}
+					}
+					.place-info-content{
+						display: flex;
+						justify-content: space-between;
+					}
+				}
+				.visitors-flowrate-info{
+					width: 100%;
+					height: 300px;
+				}
+				.place-device-view{
+					width: 100%;
+					height: 617px;
+					padding: 10px;
+					.place-device-resources{
+						position: absolute;
+						display: flex;
+						top: 9px;
+						left: 50%;
+						width: 544px;
+						padding: 8px 12px;
+						height: 54px;
+						background: #fff;
+						border-radius: 4px;
+						transform: translate(-50%,0);
+						box-shadow: 0 0 20px rgba(0,0,0,.15);
+						padding-left: 32px;
+						.resources-item{
+							width: 104px;
+							height: 100%;
+							display: flex;
+							.left-icon-view{
+								font-size: 32px;
+								margin-top: 4px;
+								width: 32px;
+								height: 100%;
+								display: flex;
+								margin-right: 8px;
+							}
+							.right-content-view{
+								height: 100%;
+								flex: 1;
+								.item-title{
+									text-align: left;
+									font-family: PingFang-SC-Regular;
+									font-size: 12px;
+								}
+								.item-num{
+									text-align: left;
+									font-family: 842-CAI978;
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+				.place-label-edit{
+					cursor: pointer;
+				}
+				.place-label-view{
+					width: 100%;
+					min-height: 60px;
+					padding: 12px;
+					.place-label-item{
+						margin: 4px;
+						line-height: 26px;
+						height: 28px;
+						border-radius: 14px;
+						text-align: center;
+						display: inline-block;
+						font-size: 12px;
+						padding: 0 10px;
+						border: 1px solid;
+					}
+				}
+				.personnel-composition-view{
+					padding-bottom: 20px;
+					display: flex;
+					justify-content: space-around;
+					.info-icon-item-view .info-item-num {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+	}
+}

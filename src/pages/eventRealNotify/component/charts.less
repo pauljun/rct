@@ -1,0 +1,131 @@
+.event-echarts {
+  height: 48px;
+  font-size: 18px;
+  line-height: 48px;
+  padding-left: 16px;
+  border-bottom: 1px solid;
+}
+.event-echarts-just {
+  height: calc(~'100% - 48px');
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .title {
+    height: 45px;
+    width: 262px;
+    margin: 0 auto;
+  }
+  .alarm_all_total_num {
+    position: relative;
+    margin-top: 11px;
+    .title {
+      background: url('../../../assets/img/monitees/realalarm/DataNameBG.svg')
+        no-repeat 50%;
+      text-align: center;
+      line-height: 45px;
+      color: #89b;
+      font-size: 16px;
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .circle-word {
+      height: 70%;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 12px;
+      @media screen and (max-width: 1366px) {
+        .circle-word-count {
+          div:nth-child(2) {
+            font-size: 16px !important;
+          }
+        }
+        .circle-nohandle-count {
+          div:nth-child(2) {
+            font-size: 16px !important;
+          }
+        }
+      }
+      .circle-word-count {
+        margin-top: -3px;
+        div {
+          text-align: center;
+        }
+        div:nth-child(2) {
+          font-size: 24px;
+          color: #151515;
+        }
+      }
+      .circle-nohandle-count {
+        margin-top: 6px;
+        div {
+          text-align: center;
+        }
+        div:nth-child(2) {
+          font-size: 24px;
+        }
+      }
+    }
+    .content {
+      height: 257px;
+      margin-top: -16px;
+      .chartAnother {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .alarm_type_total_num {
+    position: relative;
+    margin-top: -46px;
+    .title {
+      background: url('../../../assets/img/monitees/realalarm/DataNameBG.svg')
+        no-repeat 50%;
+      text-align: center;
+      line-height: 45px;
+      color: #89b;
+      font-size: 15px;
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .content {
+      height: 246px;
+      margin-top: -9px;
+      .chartAnother {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .alarm_change_total_num {
+    margin-top: 22px;
+    height: calc(~'100% - 570px');
+    .title {
+      background: url('../../../assets/img/monitees/realalarm/DataNameBG.svg')
+        no-repeat 50%;
+      text-align: center;
+      line-height: 45px;
+      color: #89b;
+      font-size: 16px;
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .content {
+      height: calc(~'100% - 45px');
+      min-height: 240px;
+      .chartAnother {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

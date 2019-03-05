@@ -1,0 +1,83 @@
+@import '../../assets/style/vars.less';
+
+
+.org-setting-wrapper{
+  width:100%;
+  .base-tree-component li{
+    overflow: hidden;
+    .ant-tree-title > span{
+      &>span{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 200px
+      }
+    }
+  }
+  .setting-breadcrumb-container{
+    margin-left:0px;
+    background-image: linear-gradient(-180deg, #F3F6F9 0%, #E3E6E9 98%);
+    .ant-breadcrumb{
+      margin-left:24px;
+      &>span{
+        .anticon{
+          margin-right:4px;
+        }
+      }
+    }
+  }
+  .org-delete-modal{
+    height: 100px;
+    line-height: 100px;
+  }
+  .org-table-content {
+    height:100%;
+    width: 100%;
+    margin: 0 auto;
+    .org-baseInfo {
+      padding: 20px 0;
+      height: 140px;
+      .orgInfo {
+        padding: 0 20px;
+      }
+    }
+    .org-table-container{
+      height: calc(~"100% - 140px");
+      .org-Search-Btns{
+        display: flex;
+        justify-content: space-between;
+         margin-bottom: 16px;
+       .org-wrapper-search{
+         margin-right:20px;
+       }
+        .form-btn-group{
+          display:flex;
+          .icon-span{
+            position: relative;
+            top:5px;
+            padding-right:3px;
+          }
+        }
+      }
+      .org-table {
+        height: calc(~"100% - 66px");
+        display:flex;
+        flex-direction: column;
+        .setting-table {
+          flex:1;
+          overflow: auto;
+        }
+        .ant-pagination{
+          height: 80px;
+          padding-top:20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:1366px){
+    .setting-container{
+      width:952px!important;
+    }
+  }
+ 
+}

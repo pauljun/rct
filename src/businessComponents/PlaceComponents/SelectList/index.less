@@ -1,0 +1,32 @@
+@import '../../../assets/style/vars.less';
+
+.place-select-list{
+  padding: 5px 10px;
+  font-size: 12px;
+  height: 100%;
+  overflow-y: auto;
+  .ant-checkbox-group{
+    display: block;
+    height: 100%;
+    .p-item{
+      padding: 0 3px;
+      line-height: 24px;
+      font-size: 12px;
+      margin-bottom: 2px;
+      .anticon{
+        color: @icon-font-color;
+        margin-right: 4px;
+        font-size: 16px;
+        vertical-align: -.25em;
+      }
+      .close{
+        float: right;
+        cursor: pointer;
+        margin-top: 3px;
+      }
+      &:hover{
+        background: #eaedf1;
+      }
+    }
+  }
+}

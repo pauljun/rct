@@ -1,0 +1,118 @@
+@import '../../assets/style/vars.less';
+
+.setting-wrapper {
+  flex:1;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  .setting-container {
+    height: calc(~'100% - 48px');
+    background: @c-fff;
+    margin: 0 auto;
+  }
+  .ant-table-tbody {
+    tr {
+      &:nth-child(even) {
+        background: @all-bgColor;
+      }
+      &:hover {
+        td {
+          background: #fff9ee;
+          // border-bottom: 1px solid #ff8800;
+        }
+      }
+      td {
+        font-size: 12px;
+        word-break: break-all;
+      }
+    }
+  }
+
+  .ant-table-wrapper,
+  .ant-spin-nested-loading,
+  .ant-spin-container,
+  .ant-table,
+  .ant-table-default,
+  .ant-table-content,
+  .ant-table-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
+  .ant-table-selection-column {
+    width: 24px;
+    min-width: 24px;
+    padding: 10px 0 10px 10px !important;
+  }
+  .ant-table-header {
+    background: @all-bdcolor;
+    height: 37px;
+    margin: 0 !important;
+    overflow: hidden !important;
+    .ant-table-thead {
+      height: 37px;
+      overflow: hidden;
+      tr {
+        th {
+          background: @all-bdcolor;
+          font-weight: bold;
+          padding: 0 16px;
+          font-size: 12px;
+          height: 37px;
+        }
+      }
+    }
+  }
+  .ant-table-body {
+    max-height: calc(~"100% - 37px") !important;
+    overflow: auto !important;
+  }
+  .table-tools {
+    color: #8899bb;
+    .anticon {
+      margin-right: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .title {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid @all-bdcolor;
+    background: #f3f6f9;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 700;
+    span{
+      display: block;
+      width: 300px;
+      padding: 0 10px;
+      background: @all-bdcolor;
+    }
+  }
+}
+.wrapper{
+  display:flex;
+  height: 100%;
+  .tree-checkall{
+    margin-bottom: 15px;
+  }
+  .s-left {
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    background: #eaedf1;
+    .title {
+      font-size: 18px;
+      color: #333333;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: 1px solid #e1e1e1;
+      padding: 0 16px;
+      font-weight: 700;
+      background: @all-bdcolor;
+    }
+    .tree {
+      height: calc(~"100% - 48px");
+    }
+  }
+}

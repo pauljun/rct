@@ -1,0 +1,46 @@
+.video-device-check-list-layout {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: auto;
+  .title-part {
+    height: 38px;
+    height: 38px;
+    line-height: 38px;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 14px;
+    align-items: center;
+    justify-content: space-between;
+    .anticon{
+      cursor: pointer;
+    }
+  }
+  .content-part{
+    height: calc(~'100% - 38px - 50px');
+  }
+  .button-group{
+    height:50px;
+  }
+  .content-tools{
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    font-size: 12px;
+    span {
+      &:last-child {
+        cursor: pointer;
+      }
+    }
+  }
+  .device-check-list-layout {
+    height: calc(~'100% - 38px');
+  }
+  .ant-checkbox-wrapper{
+    padding-right:5px;
+  }
+}

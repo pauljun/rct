@@ -1,0 +1,65 @@
+@import '../../vars.less';
+.little-pagtion {
+	.header-text {
+		color: #000000;
+		.text-red {
+			color: @primary-color;
+		}
+	}
+	.header-input-people {
+		.pagtion_Paging {
+			.paging_left {
+				border-color: #ccc;
+				background: #fff;
+				&:hover {
+					color: #fff;
+					background-color: @primary-color2;
+					border-color: @primary-color;
+					.anticon {
+						color: #fff;
+					}
+				}
+				&.paging_left_No {
+          &:hover {
+            color: #fff;
+            background-color: transparent;
+            border-color: #ccc;
+            .anticon {
+              color: #ccc;
+            }
+          }
+				}
+				.anticon {
+					color: @primary-color2;
+				}
+			}
+		}
+		.pagtion_search {
+			.ant-btn:active,
+			.ant-btn:hover,
+			.ant-btn:focus {
+				color: @primary-color;
+				border-color: @primary-color;
+			}
+		}
+	}
+	// .header-button {
+	// 	.ant-btn-block.ant-btn-primary {
+	// 		background: #fff;
+	// 		color: @primary-color2;
+	// 		border: 1px solid @primary-color2;
+	// 		&:hover,
+	// 		&:active,
+	// 		&:focus {
+	// 			color: #fff;
+	// 			background-color: @primary-color2;
+	// 			border-color: @primary-color;
+	// 		}
+	// 	}
+	// }
+}
+.little-pagtion-down {
+	.ant-select-dropdown-menu .ant-select-dropdown-menu-item-active {
+		color: @primary-color2;
+	}
+}

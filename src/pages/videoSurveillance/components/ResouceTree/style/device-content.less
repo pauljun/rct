@@ -1,0 +1,223 @@
+.org-tree-with-device-layer {
+  width: 100%;
+  height: calc(~'100% - 90px');
+  display: flex;
+  flex-direction: column;
+  .org-tree-part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+  }
+  .device-list-part {
+    height: 100%;
+    .device-list-content {
+      height: calc(~'100% - 28px');
+      .ReactVirtualized__Grid__innerScrollContainer {
+        overflow: visible !important;
+      }
+      &.hide {
+        display: none;
+      }
+    }
+    .item-part {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      line-height: 24px;
+      font-size: 12px;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      border-radius: 2px;
+      &:hover {
+        .device-item-tools {
+          visibility: visible;
+        }
+      }
+      .item-name {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+      }
+      .device-item-tools {
+        display: flex;
+        visibility: hidden;
+        // width: 70px;
+        .anticon {
+          padding-right: 0;
+          padding-left: 5px;
+          font-size: 16px;
+        }
+        .device-stream-tools {
+          .ant-popover-arrow {
+            right: 6px;
+          }
+        }
+        .ant-radio-inner, .ant-radio-inner::after {
+          transition: none;
+        }
+      }
+      .device-to-group {
+        position: absolute;
+        z-index: 2;
+        width: 220px;
+        padding: 10px 16px;
+        border-radius: 3px;
+        top: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        &:before {
+          content: '';
+          position: absolute;
+          top: -8px;
+          right: 40px;
+          width: 0;
+          height: 0;
+          margin-left: -5px;
+        }
+        .group-select-com {
+          width: 100%;
+          .ant-select-selection__choice {
+            padding: 0 30px 0 10px;
+          }
+        }
+        .ant-select-dropdown-menu {
+          height: 120px;
+        }
+        .group-select-title {
+          font-size: 12px;
+          padding-bottom: 10px;
+          font-weight: bold;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .group-btn {
+          padding-top: 10px;
+          text-align: right;
+          button {
+            font-size: 12px;
+            margin-left: 10px;
+          }
+        }
+        &.device-to-group-up {
+          bottom: 24px;
+          top: auto;
+          &:before {
+            bottom: -8px;
+            top: auto;
+          }
+        }
+      }
+    }
+  }
+  .title-part {
+    cursor: pointer;
+    width: 100%;
+    padding: 0 14px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 14px;
+    position: relative;
+    user-select: none;
+    .count-part {
+      padding-left: 10px;
+      font-size: 12px;
+      span {
+        display: inline-block;
+        position: relative;
+        padding-left: 16px;
+        margin-right: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          left: 0;
+          top: 8px;
+        }
+      }
+    }
+    .anticon {
+      padding-right: 5px;
+      font-size: 16px;
+      position: relative;
+      top: 1px;
+      cursor: pointer;
+    }
+    .title-part-left {
+      width: 50%;
+    }
+    .title-part-right {
+      width: 50%;
+      .ant-select .ant-select-selection {
+        height:  100%;
+        background:  transparent;
+        border: 0 none;
+        &:focus {
+          box-shadow: none;
+        }
+        .ant-select-selection__rendered {
+          font-size: 12px;
+          height: 26px;
+          line-height: 26px;
+        }
+        .ant-select-arrow {
+          margin-top: -6px;
+          .anticon {
+            padding-right: 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  // 组织树, 行政区划树公共样式
+  .organization-tree, .place-tree {
+    height: calc(~'100% - 28px');
+    overflow: auto;
+    transition: height 0.3s linear;
+    &.hide-tree {
+      height: 0px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li span.ant-tree-node-content-wrapper {
+      .video-lx {
+        padding-left: 5px;
+        display: none;
+        opacity: 0;
+      }
+      .anticon {
+        font-size: 16px;
+        position: relative;
+        top: 2px;
+      }
+      &:hover {
+        .video-lx {
+          display: initial;
+          opacity: 1;
+        }
+      }
+    }
+    li.loop-org span.ant-tree-node-content-wrapper .video-lx{
+      display: initial;
+      opacity: 1;
+    }
+  }
+  .hide-darg-height {
+    height: 28px !important;
+    min-height: 28px !important;
+    max-height: 28px !important;
+  }
+  .no-darg-height {
+    height: calc(~'100% - 28px') !important;
+    min-height: calc(~'100% - 28px') !important;
+    max-height: calc(~'100% - 28px') !important;
+  }
+}

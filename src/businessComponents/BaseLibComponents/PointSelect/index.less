@@ -1,0 +1,68 @@
+@import '../../../assets/style/vars.less';
+
+.point-select-wrapper{
+  .search-content{
+    button{
+      width: 104px;
+      height: 28px;
+      font-size: 12px;
+      background: #FFFFFF;
+      border: 1px solid #B5BBC7;
+      border-radius: 3px;
+      color: #333;
+      .anticon{
+        color: #8899bb;
+        font-size: 16px;
+      }
+    }
+  }
+  .camera-selected{
+    height: 238px;
+  }
+}
+.point-select-map{
+  height: 720px;
+}
+.grap-point-content{
+  margin-top: 10px;
+  background: #FFFFFF;
+  border: 1px solid #B5BBC7;
+  border-radius: 3px;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 270px;
+  padding-bottom: 29px;
+  position: relative;
+  .camera-selected{
+    padding: 0 16px;
+    height: 238px;
+    overflow-y: auto;
+    .li{
+      height: 24px;
+      font-size: 12px;
+      line-height: 24px;
+      margin-bottom: 1px;
+      width: 100%;
+      .ellip();
+      i{
+        margin-right: 4px;
+      }
+    }
+  }
+  .clear{
+    position: absolute;
+    height: 27px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid  #B5BBC7;
+    line-height: 26px;
+    cursor: pointer;
+    i{
+      margin-right: 4px;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+  }
+}

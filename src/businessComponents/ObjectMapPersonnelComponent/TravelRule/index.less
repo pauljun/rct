@@ -1,0 +1,33 @@
+.trave-rule {
+  padding-top: 18px;
+  .rule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    .header-title {
+      font-size: 14px;
+      color: #ff8800;
+      font-weight: 600;
+    }
+    .header-filtter {
+      .ant-radio-wrapper {
+        font-size: 12px;
+        &:last-child {
+          margin-right: 0;
+          >span {
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rule-content {
+    height: 320px;
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.10);
+    border-radius: 5px;
+    background: #fff;
+  }
+}

@@ -1,0 +1,60 @@
+.wrapper{
+  display:flex;
+  height: 100%;
+  .ant-tree-switcher{
+    color: #89b
+  }
+ .ant-tree-iconEle .anticon{
+   color:#89b
+ }
+  .tree-top-content{
+    display:flex;
+    margin-top:15px;
+    height: 30px;
+    border-bottom: 1px solid #D8DCE3;
+    .childrenOrg{
+      margin-left:0px;
+      display:flex;
+      &>div{
+        font-size: 12px;
+      }
+      .ant-radio-group{
+        display:flex;
+        margin-left:8px;
+        width:60%;
+        .ant-radio-wrapper{
+          font-size: 12px;
+        }
+        .ant-radio-wrapper-checked{
+          font-size: 12px;
+        }
+      }
+  
+    }
+    .tree-checkall{
+      margin-bottom: 5px;
+      margin-left:5px;
+      font-size: 12px;
+      width:30%
+    }
+  }
+  .s-left {
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    background: #eaedf1;
+    .title {
+      font-size: 18px;
+      color: #333333;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: 1px solid #e1e1e1;
+      padding: 0 16px;
+      font-weight: 700;
+      background: #d8dce3;
+    }
+    .tree {
+      height: calc(~"100% - 48px");
+    }
+  }
+}

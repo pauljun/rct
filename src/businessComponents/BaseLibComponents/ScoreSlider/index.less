@@ -1,0 +1,50 @@
+@import '../../../assets/style/vars.less';
+
+// 滑动条样式
+.slider-select-tlzj{
+  font-size: 12px;
+  padding: 0 30px;
+  display: flex;
+  height: 17px;
+  line-height: 17px;
+  margin: 14px;
+  .slider-label{
+    color: #666666;
+    margin-right: 4px;
+  }
+  .min, .max{
+    color: #333333;
+  }
+  .min{
+    margin-right: 12px;
+  }
+  .max{
+    margin-left: 12px;
+  }
+  .ant-slider{
+    flex: 1;
+    margin: 0;
+    margin-top: 7px;
+    padding: 0 4px;
+    .ant-slider-rail{
+      height: 2px;
+    }
+    .ant-slider-track{
+      background: #B5BBC7;
+      z-index: 3;
+      border-radius: unset;
+    }
+    &:hover{
+      .ant-slider-track{
+        background-color:  #B5BBC7;
+      }
+    }
+    .ant-slider-step{
+      background:  @primary-color;
+      border: 1px solid transparent;
+    }
+    .ant-slider-handle{
+      z-index: 4;
+    }
+  }
+}

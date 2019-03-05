@@ -1,0 +1,93 @@
+.task-item{
+  padding: 11px 16px;
+  height: 68px;
+  border-bottom: 1px solid #D8DCE3;
+  border-top: 1px solid transparent;
+  width: 100%;
+  cursor: pointer;
+  &.active{
+    background: #FFFFFF;
+    border-bottom: 1px solid #ff8800;
+    border-top: 1px solid #ff8800;
+    border-left: none;
+    .title-tl{
+      color: #ff8800;
+    }
+  }
+  .title-name{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    .title-tl{
+      max-width: 245px;
+      display: inline-block;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      vertical-align: top;
+    }
+  }
+  .btn-message{
+    font-size: 12px;
+    color: #666666;
+    position: relative;
+    height: 17px;
+    line-height: 17px;
+    margin-top: 9px;
+    i{
+      color: #8899bb;
+      &:hover{
+        color: #ff8800;
+      }
+    }
+    .del_task{
+      opacity: 0.8;
+      margin-left: 16px;
+      float: right;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+    .stop_or_play_icon{
+      float: right;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+    .state{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #FF9933;
+      border: 1px solid #FF8822;
+      margin-right: 6px;
+      &.out-of-date{
+        background: #B5BBC7;
+        border: 1px solid #8D96A9;
+      }
+      &.be-running{
+        background: #3EBF83;
+        border: 1px solid #2FA970;
+      }
+      &.be-paused{
+        background: #FF9933;
+        border: 1px solid #FF8822;
+      }
+    }
+    span{
+      i{
+        color: #989A9C !important;
+      }
+    }
+    span:nth-child(2){
+      margin-right: 0px;
+    }
+    
+    .icon-span{
+      position: static;
+      float: right;
+      transform: translateY(0);
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  }
+}

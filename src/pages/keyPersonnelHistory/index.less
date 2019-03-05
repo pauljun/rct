@@ -1,0 +1,113 @@
+/* 历史报警样式 */
+// .total-button {
+//   float: right;
+//   margin-right: 20px;
+//   cursor: pointer;
+// }
+// .ant-back-top {
+//   right: 40px;
+//   bottom: 40px;
+// }
+.history-alarm-wrapper{
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .alarm-task {
+    width: 300px;
+    height: 100%;
+  }
+  .alarm-container{
+    position: relative;
+    flex: 1;
+    height: 100%;
+    .alarm-container-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px 12px 22px;
+      .left {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+    }
+  .alarm-history-box-out{
+      height: calc(~'100% - 60px');
+      min-height: calc(~'100% - 60px');
+      overflow-y: auto;
+      margin-right: 10px;
+      .task-list{
+        position: relative;
+        border-radius: 3px;
+        margin: 10px 0 20px;
+        height: calc(~'100% - 30px');
+        &.no-data{
+          height: calc(~'100% - 30px');
+          .has-not-data{
+            margin-top: 200px;
+          }
+        }
+        // 去操作权限时禁用鼠标
+        &.no-handle .ant-list-item-content {
+          pointer-events: none;
+        }
+      }
+      .key-point-card {
+        margin: 12px;
+      }
+    }
+    .ant-spin-nested-loading {
+      height: 100%;
+      .ant-spin-container {
+        height: 100%;
+      }
+    }
+  }
+  .ant-list-item{
+    margin-bottom: 10px;
+  }
+  .ant-list-item-content{
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    .ant-card-head{
+      min-height: auto;
+      padding: 0;
+    }
+    .ant-card-body{
+      padding: 0;
+    }
+  }
+  .ant-pagination{
+    height: 130px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+
+.ant-select-dropdown{
+  ul{
+    li{
+      i{
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+// 适配
+@media screen and (min-width: 1600px) and (max-width: 1800px){
+  .no-padding-card.alarm-card{
+    .ant-spin-container{
+      .ant-row{
+        >div{
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+.effective-handel{
+  pointer-events: none;
+}

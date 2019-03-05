@@ -1,0 +1,26 @@
+@import '../vars.less';
+
+.setting-wrapper {
+  .setting-container {
+    .setting-breadcrumb-container{
+      .ant-breadcrumb {
+        & > span {
+          &:last-child {
+            .ant-breadcrumb-link {
+              color: @primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ant-table-tbody {
+    tr {
+      &:hover {
+        td {
+          border-bottom: 1px solid  @primary-color;
+        }
+      }
+    }
+  }
+}

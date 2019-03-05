@@ -1,0 +1,79 @@
+// @import 'src/assets/css/base';
+
+.personnel-composition-analysis-view{
+	position: absolute;
+	width: 100%;
+	height: calc(~"100% - 50px");
+	.personnel-composition-analysis-nav{
+		width: 100%;
+		height: 48px;
+		display: flex;
+		border-bottom: 1px solid ;
+		.personnel-composition-analysis-title{
+			width: 300px;
+			text-align: center;
+			line-height: 48px;
+			padding: 0 16px;
+			display: flex;
+			justify-content: space-between;
+			.panel-name{
+				font-size: 18px;
+				font-weight: 700;
+			}
+			.place-num-box{
+				display: flex;
+				.place-num-title{
+					font-size: 14px;
+				}
+			}
+		}
+		.personnel-composition-analysis-header{
+			flex: 1;
+			position: relative;
+			.tab-box{
+				height: 48px;
+				padding-left: 24px;
+				.ant-tabs-nav{
+					height: 48px;
+					.ant-tabs-tab-active{
+						font-weight: 900;
+					}
+					.ant-tabs-tab{
+						margin-right: 40px;
+						padding: 12px 0;
+						font-size: 14px;
+					}
+				}
+			}
+			.personnel-composition-analysis-header-right{
+				position: absolute;
+				height: 48px;
+				top: 0;
+				right: 0;
+				padding-right: 24px;
+				line-height: 48px;
+				.personnel-total{
+					margin-right: 16px;
+					display: inline-block;
+					.personnel-total-num {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	.personnel-composition-analysis-content{
+		display: flex;
+		width: 100%;
+		height:calc(~'100% - 48px');
+		.ant-spin-container{
+			height: 100%;
+			width: 100%;
+			.personnel-center{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

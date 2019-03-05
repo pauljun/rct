@@ -1,0 +1,32 @@
+.infinite-scroll-layout {
+  width: 100%;
+  height:100%;
+  position: relative;
+  .row-group-part {
+    display: flex;
+    justify-content: center;
+    .row-item-part{
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .scoll-back-top{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:#ff8800;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    &:hover{
+      background-color:#ffaa00
+    }
+  }
+}

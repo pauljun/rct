@@ -1,0 +1,115 @@
+.logger-platform-view{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  .ant-form-vertical{
+      width:100%;
+      display:flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+  }
+  .title-l{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 300px;
+    height: 47px;
+    line-height: 47px;
+    // background: #D8DCE3;
+    // border-bottom: #D8DCE3;
+    font-size: 18px;
+    font-weight: 700;
+    // color: #333;
+    padding-left: 16px;
+  }
+
+  .logger-container{
+    height: 100%;
+    width:1150px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    .logger-search-form{
+      width:100%;
+     
+      margin-top: 25px;
+      margin-bottom: 32px;
+      .log-search{
+        text-align: center;
+        margin-top: 16px;
+        button {
+          margin-left: 10px;
+        }
+      }
+      .ant-form-item.log-search-text{
+        width:230px;
+        margin-left:50px;
+      }
+      .ant-form-item.rangeTime{
+        width:400px;
+        .range-picker-wrapper {
+          display:flex;
+          .date-picker-wrapper{
+            margin-left: 0;
+            .ant-calendar-picker{
+              width:100%!important;
+            }
+          }
+          .date-picker-divider{
+            margin-left: 0;
+            width: 4%;
+            text-align: center;
+          }
+        }
+      }
+
+      .ant-form-item {
+        width: 150px;
+        padding-bottom: 0px;
+        display: inline-block;
+        margin-bottom:8px;
+      }
+      .ant-form-item-label {
+        text-align: left;
+      }
+      .ant-form-item-control-wrapper {
+        display: block;
+        width: 100%;
+        padding-left: 10;
+      }
+    } 
+    .platform-content{
+      flex:1;
+      overflow-y: auto;
+      .logger-table-container{
+        height: 100%;
+        .setting-table{
+          height:calc(~"100% - 80px");
+          .logger-table {
+            .log-column-index{
+              text-align: center;
+            }
+            .log-description {
+              width: 150px;
+              white-space:nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+        }
+        .ant-pagination{
+          height:80px;
+          padding-top:20px;
+        }
+      }
+    }
+  }
+}
+.log-description-tooltip {
+  pointer-events: unset;
+}
+
+.log-org-select-tree {
+  width: 250px;
+}

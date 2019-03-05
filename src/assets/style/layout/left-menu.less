@@ -1,0 +1,41 @@
+@import '../vars.less';
+
+.left-menu {
+  .menu-content-layout {
+    &::-webkit-scrollbar-thumb {
+      background: #0e1429;
+    }
+  }
+
+  .ant-menu-dark .ant-menu-sub {
+    background: #0d1120;
+  }
+  .ant-layout-sider-children {
+    .ant-menu {
+      & > .ant-menu-item {
+        &.ant-menu-item-selected > .menu-item-content > .menu-item-layout {
+          background: @primary-color;
+        }
+      }
+      & > .ant-menu-submenu {
+        .ant-menu-submenu-title {
+          .ant-menu-submenu-arrow {
+            &:after,
+            &:before {
+              background: #fff !important;
+            }
+          }
+        }
+        &.ant-menu-submenu-selected > .ant-menu-submenu-title > .menu-item-content > .menu-item-layout {
+          background: @primary-color;
+        }
+        & > .ant-menu-sub > .ant-menu-item {
+          &.ant-menu-item-selected > .menu-item-content > .menu-item-layout {
+            background: transparent;
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+}

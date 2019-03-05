@@ -1,0 +1,68 @@
+// 颜色选择
+.clothes-color-wrapper{
+  .color-select{
+    width: 104px;
+    .ant-select-selection{
+      height: 28px;
+      border: 1px solid #B5BBC7;
+      border-radius: 3px;
+      box-shadow: none;
+    }
+    .ant-select-selection__rendered{
+      line-height: 26px;
+      .ant-select-selection-selected-value{
+        font-size: 12px;
+        .color-bg{
+          display: none !important;
+        }
+        .span-all{
+          display: none;
+        }
+        .icon-all-color{
+          display: none;
+        }
+        &::before{
+          display: inline;
+          content: '上衣:';
+          font-size: 12px;
+          margin-right: 3px;
+        }
+      }
+    }
+    &:nth-child(2){
+      .ant-select-selection__rendered{
+        .ant-select-selection-selected-value{
+          &::before{
+            content: '下衣:';
+          }
+        }
+      }
+    }
+  }      
+  .ant-select-dropdown{
+    width: 210px !important;
+  }
+  .ant-select-dropdown-menu{
+    padding: 12px 16px 1px;
+    padding-right: 0px;
+    li{
+      float: left;
+      width: 33%;
+      padding: 0px;
+      font-size: 12px;
+      margin-bottom: 11px;
+      .icon-all-color{
+        font-size: 16px;
+        vertical-align: -2px;
+        color: #8899bb;
+      }
+      span{
+        margin-right: 8px;
+        vertical-align: -2px;
+        &.bg-border-white{
+          border: 1px solid #B5BBC7;
+        }
+      }
+    }
+  }  
+}

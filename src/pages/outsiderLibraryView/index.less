@@ -1,0 +1,115 @@
+@import '../../assets/style/vars.less';
+
+.monitor-spin-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  .ant-spin.monitor-spin-content{
+    max-height: none;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    z-index: 1001;
+  }
+}
+// 布控库列表页
+.monitee-black-content-wrapper{
+  // margin:  0 auto 30px;
+  overflow-y: auto;
+}
+// 布控库详情样式
+.monitee-black-lib-detail-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  .setWH();
+  .setFlex(stretch, flex-start, column);
+  .monitee-lib-info-wrapper {
+    display: inline-block;
+  }
+  .monitee-lib-people-wrapper{
+    .flexNum();
+    // overflow: hidden;
+  }
+}
+// 编辑布控库样式
+.monitee-lib-edit-wrapper{
+  .setWH();
+  // 布控库表单样式
+  .monitee-form-lib-info {
+    width: 100%;
+    height: calc(~"100% - 64px");
+    background: #F3F6F9;
+    border: 1px solid #D8DCE3;
+    border-radius: 3px;
+  }
+  // 本地添加人员
+  .monitee-people-wrapper{
+    width: 100%;
+    height: calc(~"100% - 64px");    
+    padding: 30px;  
+    background: #F3F6F9;
+    border: 1px solid #D8DCE3;
+    border-radius: 3px;
+  }
+}
+
+
+.lib-btn.ant-btn{
+  height: 28px;
+  font-size: @fs-12;
+  color: @c-main;
+  border: 1px solid @c-main;
+  background: transparent;
+  .anticon{
+    font-size: @fs-12;        
+  }
+  &:hover{ 
+    color: @c-fff;
+    background: @c-main;
+  }
+}
+// 布控库弹窗样式
+.monitee-lib-modal{
+  width: 808px;
+  &.edit-people-model{
+    width: 600px !important;
+  }
+  &.edit-machine-model{
+    width: 600px !important;
+    .ant-modal-body{
+      padding: 10px;
+      .lib-info-container{
+        padding: 12px 30px 12px 20px;
+      }
+    }
+    .machine-desc {
+      .info-label{
+        margin-top: 5px;
+      }
+    }
+  }
+  .ant-modal-body{
+    height: auto;
+    background: #f3f6f9;
+    .monitee-form-lib-info{
+      padding-right: 10px;
+      padding-left: 0px;
+    }
+    .orgTree{
+      width: 100%;
+      background: #fff;
+    }
+    .lib-delete-content{
+      p{
+        .setFont(@fs-12, @c-333);
+        padding: 0 20px;
+        span{
+          color: @c-main;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}

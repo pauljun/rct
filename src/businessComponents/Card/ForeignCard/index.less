@@ -1,0 +1,110 @@
+.foreign-card {
+  position: relative;
+  overflow: hidden;
+  width: 174px!important;
+  height: 284px!important;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  background-color: #fff;
+  padding: 8px!important;
+  margin: 12px!important;
+  border: 2px solid transparent;
+  cursor: pointer;
+  &:hover {
+    border-color: #ffaa00;
+    box-shadow: none;
+  }
+  .item-img-box{
+    height: 160px!important;
+  }
+  .foreign-header {
+    height: 160px;
+    background: #ddd;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 160px;
+    .info-img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .forign-content {
+		padding-top: 6px;
+		margin-bottom: 3px;
+    .content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 2px 0;
+      .content-value {
+        flex: 1;
+        font-size: 12px;
+        padding-left: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .card-footer {
+    display: flex;
+		justify-content: flex-end;
+    .handle {
+      width: 60px;
+      height: 24px;
+      border: 1px solid;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+    .handle-yes {
+      border-color: #ccc;
+      &:hover {
+        border: none;
+        color: #fff;
+        background-image: linear-gradient(-180deg, #ffbb22 0%, #ffaa00 100%);
+        .anticon {
+          color: #fff;
+        }
+      }
+    }
+    .handle-no {
+      margin-right: 8px;
+      border-color: #ccc;
+      &:hover {
+        border: none;
+        color: #fff;
+        background-image: linear-gradient(-180deg, #25dc9b 0%, #0fc484 95%);
+        .anticon {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .anticon {
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    color: #8899bb;
+    margin-right: 4px;
+  }
+  .alam-rotate {
+    position: absolute;
+    top: 191px;
+    bottom: 4px;
+    right: -39px;
+    width: 140px;
+    height: 100px;
+    transform: rotate(-30deg);
+  }
+  .alarm-rotate-yes {
+    background: url("../../../assets/img/monitees/alarmHistory/Big_Yes.svg")
+      no-repeat;
+  }
+  .alarm-rotate-no {
+    background: url("../../../assets/img/monitees/alarmHistory/Big_No.svg")
+      no-repeat;
+  }
+}

@@ -1,0 +1,77 @@
+.key-ponit-rolling-card{
+  position: relative;
+  width: 146px;
+  height: 278px;
+  border: 2px solid;
+  margin-right: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);
+  padding: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  &:last-child {
+    margin-right: 0;
+  }
+  .card-checkbox{
+    z-index: 10;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    &.card-checkbox-null{
+      display: none;
+    }
+  }
+  .lis-card-img-box{
+    display: block;
+    width: 130px;
+    height: 160px;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 160px;
+    .img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 3px;
+    }
+  }
+  .card-content{
+    padding-top: 4px;
+    .card-text{
+      display: flex;
+      margin-bottom: 6px;
+      .content-p{
+        flex: 1;
+        font-size: 12px;
+        margin-bottom: 2px;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        .content-span {
+          font-weight: 600;
+        }
+      }
+      .content-i{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+        margin-right: 4px;
+      }
+      .anticon{
+        font-size: 16px;
+        margin-top: 2px;
+        margin-right: 4px;
+      }
+      .content-cir{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 5px 5px 0 3px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

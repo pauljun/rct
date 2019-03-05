@@ -1,0 +1,75 @@
+.person-flow-map-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .person-flow-map {
+    flex: 1;
+  }
+  .person-map-icon,
+  .item-index {
+    width: 24px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/resource/image/person-map-icon.svg') no-repeat;
+    background-size: 24px 32px;
+    color: #fff;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .person-path-info {
+    width: 100%;
+    height: 124px;
+    display: flex;
+    .content-layout {
+      overflow: hidden;
+      .group-animate {
+        transition: transform 0.3s;
+      }
+      .group-layout {
+        padding:0 100px;
+        &:after {
+          content: '';
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          background: #d8dce3;
+        }
+      }
+      .path-item {
+
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+        .item-index {
+          line-height: 24px;
+          display: inline-block;
+        }
+        .item-count {
+          display: block;
+          i {
+            font-style: normal;
+          }
+        }
+        .item-name {
+          font-size: 12px;
+          color: #666;
+        }
+      }
+    }
+    .prev-group{
+      position: unset
+    }
+    .prev-group,.next-group {
+      position: unset;
+      transform: translateY(0)
+    }
+  }
+}

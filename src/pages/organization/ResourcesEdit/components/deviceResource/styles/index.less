@@ -1,0 +1,52 @@
+@import '../../../../../../assets/style/vars.less';
+.operation-device-model{
+  position: fixed;
+  right: 10px;
+  top: 55px;
+  z-index: 1;
+  button{
+    width: 104px;
+    height: 28px;
+    border-radius: 3px;
+    &:nth-child(2){
+      margin-left: 8px;
+    }
+  }  
+  button.edit-icon{
+    margin-left: 10px;
+    // border-color: @primary-color;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: @c-fff;
+    // background: #fdfdfd;
+    // color: @primary-color;
+    padding: 0 7px;
+  }
+}
+
+.operation-device-wrapper{
+  .search{
+    height: 62px;
+    padding-top: 16px;
+    text-align: right;
+    .cc-search{
+      width: 248px;
+    }
+  }
+  .setting-container{
+    height: 100% !important;
+  }
+  .tb-container{
+    height: 100%;
+    .center-device-container{
+      height: calc(~'100% - 62px');
+      .setting-table{
+        height: calc(~'100% - 62px');
+      }
+    }
+    .ant-pagination{
+      margin-top: 15px;
+    }
+  }
+}

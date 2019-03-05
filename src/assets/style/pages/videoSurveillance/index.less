@@ -1,0 +1,245 @@
+@import '../../vars.less';
+@import './link-tools.less';
+@import './resource-tree.less';
+
+body .video-surveillance {
+  .left-tree {
+    background-color: @video-tree-bg;
+  }
+  .slider-btn {
+    color: @c-fff;
+  }
+
+  .org-tree-with-device-layer .title-part {
+    background-color: @video-title-bg-light;
+    color: @c-fff;
+  }
+  .ant-tree {
+    color: @c-fff;
+    .ant-tree-iconEle {
+      color: @icon-font-color;
+    }
+  }
+  .ant-tree li .ant-tree-node-content-wrapper {
+    color: @video-tree-color;
+  }
+
+  .org-tree-with-device-layer
+    .organization-tree
+    .ant-tree-treenode-selected
+    > .ant-tree-node-content-wrapper {
+    background-color: @video-tree-select;
+    color: @c-fff;
+  }
+  .org-tree-with-device-layer
+    .organization-tree
+    .ant-tree-treenode-selected
+    > .ant-tree-node-content-wrapper:hover {
+    background-color: @video-tree-select;
+  }
+  .org-tree-with-device-layer
+    .organization-tree
+    li.loop-org
+    > .ant-tree-node-content-wrapper {
+    background-color: @primary-color2;
+    color: @c-fff;
+  }
+  .org-tree-with-device-layer
+    .organization-tree
+    li.loop-org
+    > .ant-tree-node-content-wrapper:hover {
+    background-color: @primary-color2;
+    color: @c-fff;
+  }
+
+  .org-tree-with-device-layer .device-list-part .item-part {
+    color: @video-tree-color;
+    &:hover {
+      background-color: @video-tree-hover
+    }
+    &.active {
+      background-color: @video-tree-select;
+      &:hover {
+        background-color: @video-tree-select;
+      }
+    }
+  }
+
+  .org-tree-with-device-layer
+    .title-part
+    .count-part
+    span.count-part-on:before {
+    background-color: @video-online-color;
+  }
+  .org-tree-with-device-layer .title-part .count-part span:before {
+    background-color: @c-light;
+  }
+  .org-tree-with-device-layer{
+    .organization-tree, .place-tree {
+      .ant-tree-node-content-wrapper:hover {
+        background: @video-tree-hover;
+        color: @c-fff;
+      }
+      .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background: @video-tree-active;
+      }
+    }
+  }
+
+  .screen-item {
+    &.active {
+      color: @primary-color2;
+      .anticon {
+        color: @primary-color2;
+      }
+    }
+  }
+
+  // 分屏模式工具条
+  .video-list-tools .tools-layout {
+    box-shadow: @card-shadow;
+  }
+  
+  // 地图模式工具条
+  .video-map-tools {
+    box-shadow: @card-shadow;
+    background: @c-fff;
+  }
+  .video-list-tools .tools-layout > div:hover,
+  .video-map-tools .tools-layout .map-draw-layout > div {
+    .anticon {
+      color: @icon-font-color; 
+    }
+    &:hover {
+      color: @primary-color2;
+      .anticon {
+        color: @primary-color2;
+      }
+    }
+  }
+  .ant-collapse {
+    background: @video-tree-bg;
+  }
+  .collection-list-layout .ant-collapse-header {
+    background: @video-title-bg-light;
+    color: @video-tree-color;
+  }
+  .collection-part ,.ReactVirtualized__List,.org-tree-with-device-layer .ant-tree {
+    &::-webkit-scrollbar-thumb {
+      background: @video-title-bg-light;
+    }
+  }
+  .ant-collapse-item {
+    &.loopGroup-item {
+      .ant-collapse-header {
+        background: @primary-color1;
+        color: @c-fff;
+      }
+    }
+  }
+  .tree-node-suffix {
+    .count {
+      color: @video-count-color;
+    }
+  }
+  .resource-search
+    .collection-part
+    .device-list-content
+    .device-item:hover
+    > .device-item-layout,
+  .resource-search
+    .collection-part
+    .device-list-content
+    .device-item.active
+    > .device-item-layout,
+  .resource-search
+    .collection-part
+    .device-list-content
+    .device-item.group-select-item
+    > .device-item-layout {
+      background-color: @video-tree-select
+  }
+  .right-content {
+    background: @all-bgColor;
+  }
+  .change-mode-btn {
+    box-shadow: @card-shadow;
+  }
+  // 选时控件
+  .moveable-time-choise {
+    box-shadow: @card-shadow;
+    background: @c-fff;
+    .move-bar {
+      color: @c-333;
+      border-bottom: 1px solid @c-ddd;
+      .tip {
+        color: @c-666;
+      }
+    }
+    .time-choise-content {
+      background: @all-bgColor;
+      .device-name {
+        color: @c-333;
+      }
+    }
+    .time-choise-footer {
+      border-top: 1px solid @c-ddd;
+    }
+  }
+  .player-mutipart-layout {
+    .player-item {
+      border: 1px solid @c-333;
+    }
+    .player-item-layer-active {
+      .player-item {
+        border: 1px solid @all-red;
+      }
+    }
+  }
+  .select-screen {
+    box-shadow: @card-shadow;
+  }
+  .drag-content {
+    .toggle{ 
+      .anticon{
+        color: @c-fff;
+      }
+    }
+  }
+}
+
+// 轮训弹窗
+.lx-set-content {
+  .video-content {
+    & > div {
+      background: @c-333;
+      color: @c-999;
+    }
+    & > .has-video{
+      color: @all-active-orange;
+    }
+  }
+  .tools-split-screen {
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.video-loop-screen-popup-layout {
+  .ant-popover-inner-content {
+    .screen-item.active {
+      color: @all-active-orange;
+    }
+  }
+}
+// 地图模式框选设备
+.video-device-check-list-layout {
+  box-shadow:@card-shadow;
+  background: @c-fff;
+  .title-part {
+    color: @c-333;
+    border-bottom: 1px solid @c-eee;
+  } 
+  .button-group{
+    border-top: 1px solid @c-eee;
+  }
+}

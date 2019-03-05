@@ -1,0 +1,34 @@
+.device-select-btn{
+  text-align: center;
+  margin-bottom: 16px;
+  .btn{
+    width: 104px;
+    height: 28px;
+    border-radius: 3px;
+    span{
+      font-size: 14px;
+      margin-left: 4px;
+    }
+    i{
+      color: #8899bb;
+      transition: all .3s;
+    }
+    &:not(.active):hover{
+      border-color: #FFAA00;
+      i{
+        color: #FFAA00;
+      }
+    }
+    &.active{
+      background: #FFAA00;
+      border: 1px solid #ff8800;
+      color: #fff;
+      i{
+        color: #fff;
+      }
+    }
+  }
+  button:nth-child(2){
+    margin-left: 8px;
+  }
+}

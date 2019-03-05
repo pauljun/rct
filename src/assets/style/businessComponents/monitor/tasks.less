@@ -1,0 +1,525 @@
+@import '../../vars.less';
+// -------------------------------布控任务弹框----------------------------------
+.monitor-tasks-model{
+	.ant-modal-body{
+		.model-content{
+			.title-name{
+				span{
+					color: @primary-color;
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------布控任务添加----------------------------------
+.monitee-tasks-add{
+	.task-top{
+		border: 1px solid  @all-bdcolor;
+		.tasks-add-title{
+			color: @primary-color;
+		}
+	}
+	.header-step-title{
+		color: @c-333;
+		border-bottom: 1px solid @all-bdcolor-gray;
+	}
+	// 添加布控任务公共样式-以及模拟表单样式修改
+	.monitee-tasks-box{
+		.monitees-error{
+			color: #f5222d;
+		}
+		.ant-form-item{
+			.ant-form-item-label{
+				label{
+					color: @c-999;
+				}
+			}
+		}
+		// 模拟表单样式修改
+		.form-group-item{
+			.form-group-item-label-required:not(.no-require){
+				&::before{
+					color: #f5222d;
+				}
+			}
+		}
+		// 公共样式
+		.ant-form-item, .form-group-item{
+			.ant-form-item-label, .form-group-item-label-required{
+				color: @c-999;
+			}
+		}
+	}
+}
+
+// -------------------------------布控任务查看和编辑---最外层样式----------------------------------
+.monitor-content-wrapper{
+  // 布控任务编辑/添加模块样式
+  .monitee-tasks-box{
+		.monitees-error{
+			color: #f5222d;
+		}
+		.ant-form-item{
+			.ant-form-item-label{
+				label{
+					color: @c-999;
+				}
+			}
+		}
+		// 模拟表单样式修改
+		.form-group-item{
+			.form-group-item-label-required:not(.no-require){
+				&::before{
+					color: #f5222d;
+				}
+			}
+		}
+		// 公共样式
+		.ant-form-item, .form-group-item{
+			.ant-form-item-label, .form-group-item-label-required{
+				color: @c-999;
+			}
+		}
+	}
+}
+
+// -------------------------------布控任务列表----------------------------------
+.monitor-tasks-list-left{
+	background: #EAEDF1;
+	.create-new-tasks{
+		button{
+			//background-image: linear-gradient(-180deg, #FFAA00 0%, #FF8800 100%);
+			color: @c-fff;
+			i{
+				color: @c-fff;
+			}
+			&:hover{
+				//background-image: linear-gradient(-180deg, #FF8800 0%, #FF6600 100%);
+			}
+		}
+	}
+	.list{
+		&.task-list{
+			border-top: 1px solid @all-bdcolor;
+		}
+		&::-webkit-scrollbar-track{
+			background-color: #EAEDF1; 
+		}
+	}
+}
+
+
+// -------------------------------布控任务查看编辑内部组件样式----------------------------------
+.monitor-task-view-edit-container{
+	.taks-full-top{
+		border-bottom: 1px solid @all-bdcolor;
+		.task-top{
+			>span{
+				color: @primary-color;
+			}
+			button{
+				color: @primary-color;
+				border-color: @all-active-orange;
+				i{
+					color: @all-active-orange;
+				}
+			}
+		}
+	}
+	.view-edit-box{
+		.task-form-box{
+			.ant-collapse-item{
+				.ant-collapse-header{
+					border-bottom: 1px solid @all-bdcolor-gray;
+					.colla-header{
+						.left-title{
+							.colla-left{
+								color: @c-333;
+							}
+							.colla-right{
+								color: @c-666;
+								&:hover{
+									color: @primary-color;
+								}
+							}
+					}
+						}
+						.right-icon{
+							border: 1px solid @all-bdcolor-gray;
+							&:hover{
+								border-color: @all-active-orange;
+								i{
+									color: @all-active-orange;
+								}
+							}
+						}
+				}
+			}
+		}
+		// 布控查看基本样式
+		.info-view{
+			.label{
+				color: @c-999;
+			}
+			.content{
+				color: @c-333;
+			}
+		}
+		// 布控人员样式
+		.libs-list-view{
+			.content{
+				span{
+					i{
+						color: @icon-font-color;
+					}
+				}
+			}
+		}
+		// 任务范围样式
+		.tasks-scope-view{
+			.content{
+				.map-show{
+					border: 1px solid @all-bdcolor;
+				}
+			}
+		}
+		// form表单提交按钮样式
+		.form-btn-list{
+			.btn{
+				&.btn-sure{
+					background-color: @primary-color;
+					color: @c-fff;
+				}
+			}
+		}
+	}
+}
+
+// 布控任务基本信息-编辑
+.monitee-tasks-box.task-basic-info{
+  .taks-name{
+    color: @c-333;
+  }
+  .form-group-item-content{
+    .range-picker-wrapper{
+      .date-picker-content{
+        .ant-calendar-picker{
+          .anticon{
+            color: @icon-font-color;
+          }
+        }
+      }
+    }
+    .ant-radio-wrapper{
+      span{
+        color: @c-333;
+      }
+    }
+  }
+  .task-describe-basic{
+    color: @c-333;
+  }
+}
+
+// 布控任务接收样式-编辑
+.monitee-tasks-box.tasks-receive{
+  .form-group-item-content{
+    .ant-checkbox-group{
+      .ant-checkbox-wrapper{
+        span{
+          color: @c-333;
+        }
+      }
+    }
+    &.repeat-mode{
+      .ant-radio-wrapper{
+        >span:nth-child(2){
+          color: @c-333;
+        }
+      }
+      button{
+        color: @c-333;
+        &:focus{
+          border: 1px solid #d9d9d9;
+          color: @c-333;
+        }
+        &.active{
+          border-color: @primary-color;
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+// 布控任务列表样式-单个布控任务样式
+.task-item{
+  border-bottom: 1px solid @all-bdcolor;
+  &.active{
+    background: @c-fff;
+    border-top: 1px solid @primary-color;
+    border-bottom: 1px solid @primary-color;
+    .title-tl{
+      color: @primary-color;
+    }
+  }
+  .btn-message{
+    color: @c-666;
+    i{
+      color: @icon-font-color;
+      &:hover{
+        color: @primary-color;
+      }
+    }
+    .state{
+      background: #FF9933;
+      border: 1px solid #FF8822;
+      &.out-of-date{
+        background: #B5BBC7;
+        border: 1px solid #8D96A9;
+      }
+      &.be-running{
+        background: #3EBF83;
+        border: 1px solid #2FA970;
+      }
+      &.be-paused{
+        background: #FF9933;
+        border: 1px solid #FF8822;
+      }
+    }
+    span{
+      i{
+        color: #989A9C !important;
+      }
+		}
+	}
+}
+
+// 布控一体机-布控库选择组件
+.monitee-libs{
+  .libs-search-title{
+    >span:nth-child(1){
+      color: @c-333;
+    }
+  }
+  .libs-search-content{
+    border-top: 1px solid @all-bdcolor;
+  }
+}
+//一体机
+.activeMachin.machinLi{
+  color: @primary-color;
+  border: 1px solid @primary-color;
+  >i{
+    color: @primary-color;
+  }
+}
+.machinLi{
+  >i{
+    color: @icon-font-color;
+  }
+}
+.machine .libs-new-style.monitee-libs{
+  .libs-search-title{
+    border-right:1px solid @all-bdcolor;
+  }
+  .libs-search-content{
+    border-right:1px solid @all-bdcolor;
+  }
+}
+.libs-new-style{
+  background: @c-fff;
+  >div{
+    .libs-search-title, .selected-title{
+      color: @c-333;
+      border-bottom: 1px solid @all-bdcolor;
+      background-color: @all-bgColor;
+    }
+  }
+  .list-left-libs{
+    border-right: 1px solid @all-bdcolor;
+    .libs-search-title{
+      .search{
+        input{
+          background: @c-fff;
+        }
+      }
+    }
+    .libs-search-content{
+      .libs-search-list-tb{
+        tr.ant-table-row-selected td{
+          background: @c-fff;
+        }
+        a{
+          color: @c-333;
+        }
+      }
+    }
+  }
+  .selected-libs-right-container{
+    .selected-title{
+      .title-text{
+        color: @c-333;
+      }
+      .libs-del{
+        color: @c-666;
+      }
+    }
+    .container-list{
+      .ant-tag{
+        background: @c-fff;
+      }
+    }
+  }
+}
+.libs-new-style.aio-libs-select{
+  .list-left-libs{
+    border: 1px solid @all-bdcolor;
+  }
+  .selected-libs-right-container{
+    border: 1px solid @all-bdcolor;
+  }
+  .libLi{
+    >i{
+      color: @icon-font-color;
+    }
+  }
+  .container-list{
+    .ant-tag{
+      i{
+        color: @icon-font-color;
+      }
+    }
+  }
+}
+
+// captionTime组件
+.capture_time{
+  .time_picker{
+    &:hover{
+      .ant-time-picker-input{
+        border-color: @primary-color;
+      }
+    }
+  }
+  .ant-time-picker{
+    .ant-time-picker-icon{
+      .anticon{
+        color: @icon-font-color;
+      }
+    }
+  }
+}
+
+// deviceSelectBtn组件
+@import '../../../../assets/style/vars.less';
+
+.device-select-btn{
+  .btn{
+    i{
+      color: @icon-font-color;
+    }
+    &:not(.active):hover{
+      border-color: @all-active-orange;
+      i{
+        color: @all-active-orange;
+      }
+    }
+    &.active{
+      background: @all-active-orange;
+      border: 1px solid @primary-color;
+      color: @c-fff;
+      i{
+        color: @c-fff;
+      }
+    }
+  }
+}
+
+// libSelect组件
+.libs-select-tl{
+  >div{
+    border: 1px solid @all-bdcolor;
+    .title-part{
+      border-bottom: 1px solid @all-bdcolor;
+    }
+  }
+}
+
+// score阈值组件
+.score-slider {
+  .tip{
+    color: @c-333;
+  }
+  &.outersider-style{
+    .ant-slider{
+      &:hover{
+        .ant-slider-track{
+          background-color: @primary-color;
+        }
+      }
+      .ant-slider-track{
+        background: @primary-color;
+      }
+      .ant-slider-step{
+        background:  @all-bdcolor-gray;
+      }
+    }
+  }
+  .ant-input-number{
+    &.ant-input-number-focused{
+      border-color: @primary-color;
+    }
+    &::selection {
+      background: @primary-color;
+    }
+    &:hover{
+      border-color: @primary-color;
+    }
+    &:focus{
+      border-color: @primary-color;
+    }
+    .ant-input-number-handler-wrap{
+      span:hover{
+        i{
+          color: @primary-color;
+        }
+      }
+    }
+  }
+  .ant-slider-rail {
+    background: @c-eee;
+  }
+  .ant-slider {
+    .ant-slider-track{
+      background: @all-bdcolor-gray;
+      z-index: 3;
+    }
+    &:hover{
+      .ant-slider-track{
+        background-color:  @all-bdcolor-gray;
+      }
+    }
+    .ant-slider-step{
+      background:  @primary-color;
+    }
+    .ant-slider-handle{
+      background: @primary-color;
+    }
+  }
+}
+
+.monitee-tasks-box.tasks-scope{
+  .libs-select-map{
+    >.map-select-layout{
+      border: 1px solid @all-bdcolor;
+    }
+  }
+}
+
+
+
+
+
+	

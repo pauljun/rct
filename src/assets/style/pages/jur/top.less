@@ -1,0 +1,37 @@
+@import "../../vars.less";
+.home-main{
+  .header{
+  p{
+    color:@primary-color;
+    // color:@primary-color!important;
+  }
+}
+.device-total-view{
+  p{
+    color:@primary-color!important;
+  }
+}
+.count>span{
+  // background: @gradient-bg;
+  .gradient-bg(@primary-color)
+  // background: @primary-color;
+}
+.theme1 {
+  .count>span{
+    background: linear-gradient(-180deg, rgba(255,255,0,.7) 0%, @primary-color 50%, rgba(255,255,0,.7) 100%);
+    // .gradient-bg(@primary-color)
+  }
+}
+.theme2 {
+  .count>span{
+    background: linear-gradient(-180deg, rgba(255,0,255,.7) 0%, @primary-color 50%, rgba(255,0,255,.7) 100%);
+    // .gradient-bg(@primary-color)
+  }
+}
+.theme3 {
+  .count>span{
+    background: linear-gradient(-180deg, rgba(0,255,255,.7) 0%, @primary-color 50%, rgba(0,255,255,.7) 100%);
+    // .gradient-bg(@primary-color)
+  }
+}
+}

@@ -1,0 +1,150 @@
+.picture-canvas {
+  &.pictureCanvas-tool {
+    canvas {
+      width: 100%;
+      height: calc(~'100% - 52px');
+    }
+  }
+  // 放大缩小按钮样式
+  ul{
+    li{
+      cursor: pointer;
+      text-align: center;
+      i{
+        font-size: 16px;
+        color: #89b;
+      }
+      &:hover{
+        i{
+          color: #f80;
+        }
+      }
+    }
+  }
+  .actions-change{
+    position: absolute;
+    bottom: 65px;
+    right: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.30);
+    border-radius: 3px;
+    &.actions-change-rotate{
+      bottom: 150px;
+    }
+    li{
+      width: 30px;
+      height: 25px;
+      line-height: 25px;
+      &.disabled{
+        cursor:not-allowed;
+        color: #999;
+        .anticon{
+          color: #999;
+        }
+      }
+    }
+  }
+  // 下载全屏按钮
+  .actions-utils-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    li{
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      background: #fff;
+      border-radius: 3px;
+      float: left;
+      &:nth-child(2){
+        margin-left: 4px;
+      }
+    }
+    .tools-screen-layer {
+      .anticon {
+        padding-right: 0;
+      }
+    }
+  }
+  // 搜图按钮
+  .baselib-pic-search{
+    position: absolute;
+    bottom: 13px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    button{
+      margin-left: 8px;
+      width: 104px;
+      height: 28px;
+      font-size: 12px;
+      i{
+        font-size: 16px;
+      }
+    }
+  }
+  // 收藏
+  .actions-collect-btn{
+    font-size: 16px;
+    position: absolute;
+    right: 8px;
+    top: -32px;
+    cursor: pointer;
+    &.actions-collect-btn-active {
+      color: #ffaa00;
+    }
+  }
+  // .canvas-actions {
+  //   position: absolute;
+  //   bottom: 16px;
+  //   left: 0;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   user-select: none;
+  // }
+  // .actions-group {
+  //   display: flex;
+  //   margin: 0 4px;
+  //   background-image: linear-gradient(-180deg, #fff, #f3f6f9 98%);
+  //   border-radius: 3px;
+  // }
+  // .actions-item {
+  //   width: 48px;
+  //   height: 40px;
+  //   text-align: center;
+  //   position: relative;
+  //   cursor: pointer;
+  //   &.max-item{
+  //     width: 72px;
+  //   }
+  //   &.disabled{
+  //     cursor:not-allowed;
+  //     color: #999;
+  //     .anticon{
+  //       color: #999;
+  //     }
+  //   }
+  //   &:after {
+  //     position: absolute;
+  //     right: 1px;
+  //     top: 4px;
+  //     content: '';
+  //     display: inline-block;
+  //     width: 1px;
+  //     height: 32px;
+  //     opacity: 0.5;
+  //     -webkit-box-shadow: 1px 0 1.5px #89b;
+  //     box-shadow: 1px 0 1.5px #89b;
+  //   }
+  //   .anticon{
+  //     vertical-align: -4px;
+  //     font-size: 16px;
+  //     color: #89b;
+  //   }
+  //   .action-text {
+  //     display: block;
+  //     font-size: 12px;
+  //   }
+  // }
+}

@@ -1,0 +1,97 @@
+.imm-view-box{
+  margin-top: 8px;
+  box-shadow: 2px 4px 16px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff;
+  .switch-btn-container{
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    .imm-switch{
+      display: flex;
+      height: 32px;
+      border-radius: 3px;
+      overflow: hidden;
+      z-index: 5;
+      justify-content: center;
+      .switch-box{
+        width: 80px;
+        border: 1px solid #A7AEBC;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: .5s;
+        &:nth-child(1){
+          border-radius: 3px 0 0 3px;
+          border-right-color: transparent;
+        }
+        &:nth-child(2){
+          border-left-color: transparent;
+          border-right-color: transparent;
+        }
+        &:nth-child(3){
+          border-radius: 0 3px 3px 0;
+          border-left-color: transparent;
+        }
+        .anticon{
+          font-size: 16px;
+          margin-right: 4px;
+          position: relative;
+          top:1px;
+          color: #89b;
+        }
+        &.switch-box-active{
+          border-color: #FF8800;
+          background: #fa0;
+          color: #fff;
+          .anticon{
+            color: #fff;
+          }
+        }
+      }
+      .switch-box-dis{
+        cursor: not-allowed;
+        background: #eee;
+        border-right-color: #A7AEBC!important;
+        .anticon{
+          font-size: 16px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .imm-content{
+    position: relative;
+    width: 976px;
+    height: 595px;
+    padding: 0 8px;
+    border-radius: 3px;
+    .imm-content-box{
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: .5s;
+      .tools-resource-layer {
+        display: none;
+      }
+      .lm-player{
+        .top-contraller-bar{
+          display: none;
+        }
+        .left-contraller{
+          .play-type{
+            i{
+              &:first-child{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .imm-content-box-active{
+      display: block;
+    }
+  }
+}

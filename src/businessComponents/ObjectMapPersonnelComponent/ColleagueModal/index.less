@@ -1,0 +1,89 @@
+.personnel-collegue-modal {
+  .modal-content {
+    background: #f3f6f9;
+  }
+  .collegue-modal {
+    padding: 20px 10px;
+    height: 700px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 8px;
+      align-items: center;
+      .address {
+        .address-label {
+          font-size: 14px;
+          color: #333333;
+          .value {
+            color: #ffaa00;
+          }
+        }
+      }
+      .header-go {
+        width: 140px;
+        height: 28px;
+        border-radius: 3px;
+        color: #fff;
+        background-color: #ffaa00;
+        border: 1px solid #ff8800;
+        line-height: 26px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        .anticon {
+          position: relative;
+          top: 2px;
+          margin-right: 4px;
+          font-size: 16px;
+        }
+      }
+    }
+    .collague-content {
+      height: calc(~'100% - 42px');
+      overflow: auto;
+      padding: 12px 0 0 6px;
+      .time-case {
+        position: relative;
+        padding: 0 0 12px 12px;
+        border-left: 2px solid #ccc;
+        &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 12px;
+          height: 12px;
+          top: 0;
+          left: -7px;
+          border-radius: 50%;
+          background: #ff8800;
+        }
+        .case-header {
+          position: relative;
+          top: -5px;
+        }
+        .case-content {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          .detail-box-item {
+            margin: 0 8px 8px 0;
+            background: #fff;
+            box-shadow: 0 0 1px #fff;
+          }
+          .object-map-double {
+            margin: 0 8px 8px 0;
+          }
+          .single-box-null {
+            width: 146px;
+            margin-right: 8px;
+          }
+          .doruble-box-null {
+            width: 284px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

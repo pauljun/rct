@@ -1,0 +1,74 @@
+@import '../../vars.less';
+
+.private-net-detail {
+  .details-text-handled{
+    border-color: #ccc;
+    background: #fff;
+  }
+  .detail-header-button {
+    .header-btn {
+      color: #fff;
+      &:first-child {
+        background-image: linear-gradient(-180deg, #25DC9B 0%, #0FC484 95%);
+        &:active,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(-180deg, #0FC484 0%, #0AAC72 100%);
+        }
+      }
+      &:last-child {
+        background-image: linear-gradient(-180deg, #FFBB22 0%, #FFAA00 100%);
+        &:active,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(-180deg, #FFAA00 0%, #FF8800 100%);
+        }
+      }
+    }
+  }
+  .private-net-header {
+    .detail-detailed-left{
+      .detailed-Cloth{
+        border-color: #ccc;
+        background: #fff;
+        .cloth-p{
+          color: #333333;
+        }
+      }
+    }
+    .detail-detailed-right {
+      border-color:#ccc;
+      background: #fff;
+      .detailed-right-header {
+        border-bottom-color: #ccc;
+        .header-name {
+          color: @primary-color;
+          &.header-name-illegal{
+            color: @primary-color;
+          }
+        }
+        .header-progress{
+          .progress-span{
+            color: #666666;
+          }
+          .ant-progress{
+            .ant-progress-bg{
+              background: @primary-color;
+            }
+            .ant-progress-text{
+              color: @primary-color;
+            }
+          }
+        }
+      }
+      .detailed-right-center{
+        .right-center-p{
+          color: @c-333;
+          .right-center-span{
+            color: @c-666;
+          }
+        }
+      }
+    }
+  }
+}

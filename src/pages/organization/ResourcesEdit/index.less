@@ -1,0 +1,64 @@
+.org-resource-modal-wrapper{
+  
+  .ant-modal{
+    width:952px!important;
+    .ant-modal-content{
+      width: 952px;
+      height: 740px;
+      .modal-footer{
+        display:none
+      }
+      .modal-content{
+        overflow: hidden;
+      }
+      .place-tree{
+        height:520px;
+      }
+      .org-resource-buttons{
+        text-align: center;
+        &>.ant-btn{
+          margin:8px;
+        }
+      }
+      .device-tlt{
+        margin: 0 auto;
+        width:100%;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        .fr{
+          display: block;
+          width: 300px;
+        }
+      }
+      .device-edit-container{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        .btn-group{
+          flex:1;
+          position:relative;
+          &>div{
+            position: absolute;
+            left: 50%;
+            width: 100%;
+            top: 50%;
+            margin-bottom: 16px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            button{
+              font-size: 12px;
+              width: 48px;
+              margin-bottom: 10px;
+              height: 52px;
+              padding: 0;
+            }
+          }
+        }
+        .tb{
+          width:300px;
+        }
+      }
+    }
+  }
+}

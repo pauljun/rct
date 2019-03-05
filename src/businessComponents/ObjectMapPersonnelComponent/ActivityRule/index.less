@@ -1,0 +1,66 @@
+.activity-rule {
+  padding-top: 18px;
+  .rule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    .title {
+      font-size: 14px;
+      color: #ff8800;
+      font-weight: 600;
+    }
+    .flutter {
+      display: flex;
+      justify-content: space-between;
+      .ant-radio-group {
+        padding-top: 3px;
+      }
+      .flutter-button {
+        width: 104px;
+        height: 28px;
+        line-height: 26px;
+        border-radius: 3px;
+        color: #ffaa00;
+        border: 1px solid #ffaa00;
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: #ff8800;
+        }
+        .anticon {
+          position: relative;
+          top: 1px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .rule-content {
+    position: relative;
+    height: 725px;
+    background: #fff;
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.10);
+    border-radius: 5px;
+    overflow: hidden;
+    .go-trave {
+      position: absolute;
+      bottom: 132px;
+      right: 46.5%;
+      width: 80px;
+      height: 80px;
+      padding-top: 16px;
+      color: #fff;
+      border-radius: 50%;
+      background-image: linear-gradient(-180deg, #FFBB22 0%, #FFAA00 100%);
+      box-shadow: 0 8px 16px -4px rgba(255,136,0,0.60);
+      text-align: center;
+      cursor: pointer;
+      .anticon {
+        font-size: 24px;
+      }
+    }
+  }
+}

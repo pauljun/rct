@@ -1,0 +1,19 @@
+.trajectory-map-layout {
+  .map-content-part {
+    width: 100%;
+    position: relative;
+    padding: 0 150px;
+    .content-view{
+      padding: 5px 10px;
+      background: #fff;
+    }
+  }
+  .detail-box-item {
+    box-shadow: none;
+    background: #fff;
+    img{
+      max-width: 100% !important;
+      max-height: 100% !important;
+    }
+  }
+}

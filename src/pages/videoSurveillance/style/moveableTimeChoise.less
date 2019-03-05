@@ -1,0 +1,53 @@
+.moveable-time-choise {
+  position: fixed;
+  z-index: 999;
+  bottom: 8px;
+  left: 48px + 300px + 8px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  .move-bar {
+    height: 36px;
+    width: 100%;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 16px;
+    user-select: none;
+    .tip {
+      font-size: 12px;
+      margin-left: 8px;
+      font-weight: normal;
+    }
+  }
+  .time-choise-content {
+    flex: 1;
+    padding: 0 32px;
+    .device-name {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 16px 0;
+    }
+    .range-picker-wrapper {
+      .date-picker-wrapper {
+        margin-left: 0;
+        margin-bottom: 12px;
+        width: 100%;
+        .ant-calendar-picker {
+          width: 100%!important;
+        }
+      }
+    }
+  }
+  .time-choise-footer {
+    height: 52px;
+    line-height: 52px;
+    width: 100%;
+    text-align: center;
+    .ant-btn {
+      width: 80px;
+      height: 32px;
+      margin: 0 5px;
+    }
+  }
+}

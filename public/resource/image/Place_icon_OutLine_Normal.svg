@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="42px" viewBox="0 0 32 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Pin/Place_icon_OutLine_Normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A3ACBF" offset="0%"></stop>
+            <stop stop-color="#8D96A9" stop-opacity="0.95" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Pin/Place_icon_OutLine_Normal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2.00098319,16.1676511 C2.00032834,16.1118453 2,16.055961 2,16 C2,8.2680135 8.2680135,2 16,2 C23.7319865,2 30,8.2680135 30,16 C30,16.055961 29.9996717,16.1118453 29.9990168,16.1676511 C29.9309947,22.5604821 25.9740951,26.0345399 23,30 C20,34 20,40 16,40 C12,40 12,34 9,30 C6.02590494,26.0345399 2.06900528,22.5604821 2.00089154,16.1677133 Z" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

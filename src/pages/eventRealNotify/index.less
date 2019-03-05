@@ -1,0 +1,117 @@
+.event-real-notify {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  .event-real-total {
+    height: 100%;
+    width: 300px;
+    transition: all 0.5s;
+    position: relative;
+    &.collapse {
+      margin-left: -300px;
+      .collapse-btn {
+        .anticon {
+          color: #fff;
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .out-scroll-div {
+      height: 100%;
+      width: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+  .event-real-container {
+    flex: 1;
+    height: 100%;
+    padding: 0 0px 2px 0;
+    position: relative;
+    .ant-back-top {
+      right: 40px;
+    }
+    .ant-pop-alarm {
+      .ant-popover-inner-content {
+        padding: 2px 9px;
+      }
+    }
+    .alarm-top-tab {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      line-height: 48px;
+      .alarm-just-button {
+        position: absolute;
+        right: 24px;
+        z-index: 10;
+        top: 0;
+        border-bottom: 0;
+      }
+      .alarm-top-left {
+        width: 112px;
+        padding: 0 10px;
+        border-bottom: 2px solid;
+        cursor: pointer;
+        .anticon {
+          margin-right: 10px;
+        }
+      }
+    }
+    .alram_right_header {
+      height: 32px;
+      line-height: 32px;
+      margin-bottom: 16px;
+      .refresh_btn {
+        font-size: 14px;
+        float: right;
+        width: 90px;
+        height: 32px;
+        > span {
+          margin-left: 2px;
+        }
+      }
+    }
+    .alart_list_item {
+      height: calc(~'100% - 48px');
+      display: flex;
+      flex-wrap: wrap;
+      overflow-y: auto;
+      position: relative;
+      justify-content: center;
+      align-content: space-between;
+      padding: 20px 100px;
+      .event-real-alarm-just {
+        margin-left: 24px;
+        width: 188px;
+        height: 0px;
+      }
+      .bottom-button-jump {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .spin-loading-bottom {
+        position: absolute;
+        left: 50%;
+        bottom: 100px;
+        z-index: 30;
+      }
+      .alarm-demo-infinite-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+.alarm-item-layer {
+  display: flex;
+}

@@ -1,0 +1,130 @@
+// AntD 样式文件 和 自定义变量
+// 颜色不可以重复
+@import "~antd/lib/style/themes/default.less";
+@import "./_mixin.less";
+@primary-color: #ff8800;
+@primary-color1: #ff8801;
+@primary-color2: #ffaa00;
+@community-borderColor:#ffbb22;
+@header-bg: #0b1532;
+@menu-bg: #181c2a;
+@tab-item-normol: #3c445b;
+
+//视频监控
+@video-tree-bg:#2b3247;//视频监控下资源tree的背景
+@video-title-bg-light:#37415f; //视频监控下的标题颜色
+@video-tree-color: rgba(255, 255, 255, 0.8);
+@video-tree-hover: rgba(55, 65, 95, 0.4);
+@video-tree-active: rgba(110, 129, 185, 0.4);
+@video-online-color:#44dba5;
+@video-tree-select:#404659;
+@video-count-color:#7584a3;
+
+
+@lightbg1: lighten(@primary-color, 1%);
+@lightbg2: lighten(@primary-color, 90%);
+// @gradient-bg: linear-gradient(-180deg, lighten(@primary-color, 10%) 0%, @primary-color 50%, darken(@primary-color, 10%) 100%);
+// @bg-gradient: @primary-color;
+
+// 字号大小
+@fs-24: 24px; 
+@fs-20: 20px;
+@fs-18: 18px;
+@fs-16: 16px;
+@fs-14: 14px;
+@fs-12: 12px;
+
+// 字体颜色
+@c-dark: #252525;
+@c-normal: #595959;
+@c-light: #989898;
+@c-main: #FF8800;
+@c-hover: #38BCFE;
+@c-disabled: #686868;
+
+// 主色
+@all-color: #44AAFF; /* 主色调蓝 */
+@all-red: #FF4466;   /* 部分配色 */
+@all-hover: #2299FF;  /* hover颜色 */
+@all-bgColor:#F3F6F9;/*  背景颜色 */
+@all-active-orange: #FFAA00; /* 按钮激活 */
+@all-bdcolor: #D8DCE3;  /*边框颜色*/
+@all-bdcolor-gray: #b5bbc7; /*深色颜色边框*/
+@icon-font-color: #8899bb; /*iconfont图标颜色*/
+
+// 常用公用颜色
+@c-aaa: #aaa;
+@c-fff: #fff;
+@c-ccc: #ccc;
+@c-ddd: #ddd;
+@c-eee: #eee;
+@c-333: #333;
+@c-444: #444;
+@c-666: #666;
+@c-999: #999;
+@c-black: #000;
+
+// 卡片阴影
+@card-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.3);
+
+// 其他
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.highlight{
+  color: @c-main;
+}
+.ant-tooltip {
+  .ant-tooltip-inner {
+    background-color: @c-fff;
+    color: #666;
+    font-size: 12px;
+  }
+  .ant-tooltip-arrow {
+    width: 10px;
+    height: 10px;
+    background: @c-fff;
+    transform: rotate(45deg);
+    bottom: 4px;
+    border: none;
+  }
+}
+.ant-tooltip.ant-tooltip-placement-top {
+  .ant-tooltip-arrow {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
+  }
+}
+.ant-tooltip.ant-tooltip-placement-bottom {
+  .ant-tooltip-arrow {
+    box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.07);
+  }
+}
+
+
+
+:root { 
+  --custom-color: @primary-color;
+}
+
+.primary-color{
+  color: @primary-color;
+}
+
+.gradient-bg(@color) {
+  background: linear-gradient(-180deg, rgba(255,255,255,.7) 0%, @color 15%,@primary-color 85%, rgba(255,255,255,.7) 100%);
+}
+
+ul,ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+/*修改antd样式*/
+@input-height-sm:50px;

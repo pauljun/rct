@@ -1,0 +1,146 @@
+.key-point-card {
+  width: 340px;
+  height: 300px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  cursor: pointer;
+  transition: .3s;
+  padding: 8px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  &:hover {
+    box-shadow: none;
+  }
+  &.handle{
+    height: 330px;
+  }
+  .card-header {
+    display: flex;
+    padding-bottom: 8px;
+    .header-box {
+      position: relative;
+      width: 156px;
+      height: 192px;
+      background: #f3f6f9;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 192px;
+      &:first-child {
+        margin-right: 8px;
+      }
+      .header-img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .img-text {
+        position: absolute;
+        height: 40px;
+        line-height: 40px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4));
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+  .card-content {
+    .content-name {
+      display: flex;
+      align-items: center;
+      margin-bottom: -2px;
+      .name {
+        width: 50%;
+        display: flex;
+        .info {
+          flex: 1;
+          font-weight: 600;
+          font-size: 12px;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+        }
+      }
+      .process {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        .ant-progress-bg {
+          height: 2px!important;
+        }
+        .title {
+          width: 100px;
+        }
+        .anticon {
+          top: 1px;
+        }
+        .number {
+          font-size: 16px;
+          color: #ffaa00;
+        }
+      }
+    }
+    .content-message {
+      display: flex;
+      margin-bottom: 4px;
+      .title {
+        flex: 1;
+      }
+    }
+    .title {
+      font-size: 12px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+  }
+  .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    .handle{
+      width: 60px;
+      height: 24px;
+      border: 1px solid;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+    .handle-yes {
+      &:hover {
+        border: none;
+      }
+    }
+    .handle-no {
+      margin-right: 10px;
+      &:hover {
+        border: none;
+      }
+    }
+  }
+  .anticon {
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    color: #8899bb;
+    margin-right: 4px;
+  }
+  .alam-rotate{
+    position: absolute;
+    bottom: -22px;
+    right: -40px;
+    width: 140px;
+    height: 100px;
+    transform: rotate(-30deg);
+  }
+  .alarm-rotate-yes{
+    background: url('../../../assets/img/monitees/alarmHistory/Big_Yes.svg') no-repeat
+  }
+  .alarm-rotate-no{
+    background: url('../../../assets/img/monitees/alarmHistory/Big_No.svg') no-repeat
+  }
+}

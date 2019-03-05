@@ -1,0 +1,105 @@
+@import '../../vars.less';
+
+.alarm-real-just {
+  color: #333333;
+  border-bottom-color: #c9c5c5;
+  .circle-word {
+    .circle-word-count {
+      .font-resource-normal {
+        color: #151515;
+      }
+    }
+    .circle-nohandle-count {
+      .font-resource-normal {
+        color: @primary-color;
+      }
+    }
+  }
+}
+.person-alarm-view {
+  .person-alarm-left {
+    background: #eaedf1;
+    .collapse-btn {
+      .anticon {
+        color: @c-fff;
+      }
+    }
+  }
+  .person-alarm-right {
+    .alarm-scroll-height {
+      background-color: @primary-color;
+      &:hover {
+        background-color: @all-active-orange;
+      }
+    }
+    .alarm-just-button {
+      .ant-btn {
+        color: @primary-color;
+        border-color: @primary-color;
+        &:hover {
+          color: @c-fff;
+          border-color: @primary-color;
+          background: @primary-color;
+        }
+        &:focus {
+          color: @c-fff;
+          border-color: @primary-color !important;
+          background: @primary-color;
+        }
+      }
+    }
+    .ant-tabs {
+      .real-alarm-height {
+        div {
+          color: @primary-color;
+        }
+        .ant-btn {
+          &:hover {
+            color: @c-main;
+            border-color: @c-main;
+          }
+        }
+      }
+      .ant-tabs-bar { 
+        // .ant-tabs-tab-active {
+        //   color: @primary-color;
+        //   .anticon {
+        //     color: @primary-color;
+        //   }
+        // }
+        .ant-tabs-nav-container {
+          border-bottom-color: #B5BBC7;
+          .ant-tabs-nav-scroll {
+            background: linear-gradient(#F3F6F9, #E3E6E9);
+            .ant-tabs-nav {
+              .ant-tabs-ink-bar {
+                background-color: @primary-color;
+              }
+              div {
+                .ant-tabs-tab {
+                  background: linear-gradient(#F3F6F9, #E3E6E9);
+                  &.ant-tabs-tab-active {
+                    color: @primary-color;
+                    .anticon {
+                      color: @primary-color;
+                    }
+                  }
+                  .anticon {
+                    color: @icon-font-color;
+                  }
+                  &:hover {
+                    color: @primary-color;
+                    .anticon {
+                      color: @primary-color;
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

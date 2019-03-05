@@ -1,0 +1,35 @@
+@import "../../vars.less";
+@import "./userInfo.less";
+
+.user-check-view{
+  .ant-modal-content{
+    .modal-content{
+      background:@all-bgColor;
+    }
+  }
+}
+.user-setting-wrapper{
+  .setting-breadcrumb-container{
+    // background-image: linear-gradient(-180deg, #F3F6F9 0%, #E3E6E9 98%);
+    .ant-breadcrumb{
+      &>span{
+        color: @c-dark;
+        .anticon{
+          color: @icon-font-color;
+        }
+      }
+    }
+  }
+  .user-content-table{
+    .ant-table-thead {
+      tr {
+        th {
+          background: @all-bgColor;
+        }
+      }
+    }
+  }
+  .setting-table{
+    .disabled{ color: @c-666};
+  }
+}

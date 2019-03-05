@@ -1,0 +1,73 @@
+// 布控任务接收样式
+.monitee-tasks-box.tasks-receive{
+  .repeat-mode-box{
+    height: 25px;
+    line-height: 25px;
+    .form-group-item-label-required{
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+  .form-group-item{
+    .form-group-item-label-required{
+      height: 18px;
+      line-height: 18px !important;
+    }
+  }
+  .form-group-item-content{
+    .ant-checkbox-group{
+      height: 18px;
+      line-height: 18px;
+      .ant-checkbox-wrapper{
+        span{
+          font-size: 12px;
+          color: #333;
+          font-weight: normal;
+        }
+      }
+    }
+    .ant-radio-group{
+      height: 18px;
+      line-height: 18px;
+      margin-bottom: 0px !important;
+    }
+    &.repeat-mode{
+      .ant-radio-group{
+        >label:nth-child(2){
+          margin-left: 5px !important;
+        }
+      }
+      .ant-radio-wrapper{
+        >span:nth-child(2){
+          font-size: 12px;
+          color: #333;
+          font-weight: normal;
+        }
+      }
+      button{
+        width: 40px;
+        height: 25px;
+        padding: 0px;
+        margin-right: 8px;
+        color: #333;
+        &:focus{
+          border: 1px solid #d9d9d9;
+          color: #333;
+        }
+        span{
+          font-size: 12px;
+        }
+        &.active{
+          border-color: #ff8800;
+          color: #ff8800;
+        }
+      }
+    }
+  }
+  .ant-form-item{
+    margin: 0px;
+    .ant-form-explain{
+      display: none;
+    }
+  }
+}

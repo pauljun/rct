@@ -1,0 +1,56 @@
+@import "../../vars.less";
+.soldier-container {
+  .title-l{
+    background: @all-bgColor;
+    border-bottom-color: @all-bdcolor;
+    color: @c-333;
+  }
+}
+
+.setting-center-header-wrapper {
+  background: @all-bgColor;
+  border-bottom-color: @all-bdcolor;
+  .header-container {
+    .header {
+      color: @c-333;
+    }
+  }
+}
+.setting-title-wrapper {
+ .title-container {
+   .title {
+     color: @c-333;
+   }
+ }
+}
+
+.soldier-modal {
+  .ant-modal-body {
+    .soldier-modal-content-wrapper {
+      .name-label {
+        color: @c-666;
+      }
+      .org-user-wrapper{
+        .solider-choice-user {
+          border-color:  @all-bdcolor;
+          .setting-tree-content {
+            .ant-tree-node-content-wrapper.ant-tree-node-selected {
+              background:@all-bgColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 用户列表
+.choice-user-list {
+  border-left-color: @all-bdcolor ;
+  .user-item.active {
+    background: @all-bgColor;
+    .user-select-icon {
+      color: @primary-color2;
+    }
+  }
+}

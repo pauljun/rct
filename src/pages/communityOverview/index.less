@@ -1,0 +1,31 @@
+.community_entry {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 280px;
+  .moveable-time-choise{
+    background: #fff;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.3);
+    .move-bar{
+      border-bottom: 1px solid #ddd;
+    }
+    .time-choise-content{
+      background: #f3f6f9;
+    }
+    .time-choise-footer{
+      border-top: 1px solid #ddd;
+    }
+  }
+  .community_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .community_suspension {
+    position: absolute;
+    top: 8px;
+    right: calc(~'(100% - 280px) / 2');
+    transform: translateX(50%);
+  }
+}

@@ -1,0 +1,63 @@
+@import '../../assets/style/vars.less';
+
+.operation-view-wrapper{
+  height: 100%;
+  .cc-search{
+    width: 200px;
+  }
+  .s-container{
+    border-bottom: 1px solid @all-bdcolor-gray;
+    font-size: 14px;
+    color: @c-333;
+    font-weight: 700;
+    text-align: right;
+    padding: 16px 0;
+    &>.ant-btn{
+      margin-right: 20px;
+      width: 128px;
+      height: 28px;
+      font-size: 12px;
+      background: @all-active-orange;
+    }
+  }
+  .tb{
+    height: calc(~'100% - 60px');
+    .setting-table{
+      height: calc(~'100% - 80px');
+    }
+  }
+  .ant-pagination {
+    height:80px;
+    padding-top: 20px;
+  }
+  .title-l{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 300px;
+    height: 47px;
+    line-height: 47px;
+    background: @all-bdcolor;
+    border-bottom: @all-bdcolor;
+    font-size: 18px;
+    font-weight: 700;
+    color: @c-333;
+    padding-left: 16px;
+  }
+  .concat-phone-hide{
+    cursor: pointer;
+  }
+}
+
+.operation-del-container{
+  width: 320px;
+  .title-name{
+    font-size: 12px;
+    color: @c-333;
+    span{
+      color: @primary-color2;
+      margin: 0 2px;
+    }
+  }
+}

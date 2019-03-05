@@ -1,0 +1,38 @@
+@import '../../../assets/style/vars.less';
+
+.operation-detail-wrapper{
+  position: relative;
+  height: 100%;
+  .title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 300px;
+    height: 44px;
+    line-height: 44px;
+    background: @all-bdcolor;
+    border-bottom: @all-bdcolor;
+    font-size: 18px;
+    font-weight: 700;
+    color: @c-333;
+    padding-left: 16px;
+  }
+  .ant-tabs-nav-container{
+    padding-left: 320px;
+    background: #f3f6f9;
+    border-bottom: 1px solid #d8dce3;
+  }
+  .ant-tabs-bar{
+    margin: 0;
+  }
+  .ant-tabs{
+    height: 100%;
+    .ant-tabs-content{
+      height: calc(~'100% - 45px');
+    }    
+  }
+  .ant-spin-container, .ant-spin-nested-loading{
+    height: 100%;
+  }
+}
